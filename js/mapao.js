@@ -10,7 +10,6 @@ $( document ).ready(function() {
   // Pontos
   $.getJSON("geojson/estacoes.geojson", function(estacoesGeojson) {
       estacoesGeojson.features.forEach(function(marker) {
-          console.dir(marker);
           L.marker([marker.geometry.coordinates[1], marker.geometry.coordinates[0]], {
               'icon': L.mapbox.marker.icon({'marker-symbol': 'bus','marker-color': '#fd4d3d'}), // bus
               //'riseOnHover': true
@@ -67,10 +66,10 @@ $( document ).ready(function() {
     }).addTo(map);
   });
 
-
-
-
-
-
+var mostraLegal = L.mapbox.legendControl({'position': 'bottomleft'}).addLegend(document.getElementById('legenda-transoceanica-benvindo').innerHTML);
+mostraLegal.addTo(map);
 
 });
+
+
+

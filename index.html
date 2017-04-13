@@ -1,21 +1,71 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset=utf-8 />
-    <title>Add styles made with Mapbox Studio using styleLayer</title>
-    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-    <script src='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.js'></script>
-    <link href='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.css' rel='stylesheet' />
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-      crossorigin="anonymous">
-    </script>
-    <link href='css/main.css' rel='stylesheet' />
-    <link href='css/hovers.css' rel='stylesheet' />
-  </head>
-  <body>
-    <div id='map'></div>
-    <script src='js/mapao.js'></script>
-  </body>
+
+<head>
+  <meta charset=utf-8 />
+  <title>Add styles made with Mapbox Studio using styleLayer</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <script src='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.js'></script>
+  <link href='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.css' rel='stylesheet' />
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css' rel='stylesheet' />
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css.map' rel='stylesheet' />
+  <link href='css/main.css' rel='stylesheet' />
+  <link href='css/hovers.css' rel='stylesheet' />
+</head>
+
+<body>
+  <div id='map'></div>
+
+  <div id='legenda-transoceanica-benvindo' class='legenda' style='display:none;'>
+    <h2 id='legenda-transoceanica-titulo'>TRANSOCEÂNICA</h2>
+    <p id='paragrafo-legenda-transoceanica'>
+      <strong><span id='navegue-pelo-mapa-em-amarelo'>Navegue pelo mapa,<br/>
+     clique nos pontos e conheça<br /></span></strong> essa obra que está mudando para melhor a nossa Niterói
+    </p>
+
+  </div>
+
+  <div id='teste-da-bagaca' style='display:none;'>
+    <div class="tile is-ancestor" id='tile-grandao'>
+      <div class="tile is-vertical is-8">
+        <div class="tile">
+          <div class="tile is-parent is-vertical">
+            <article class="tile is-child notification is-primary">
+              <p>De: Rótula do DPO Cafubá</p>
+              <p>Até: Shopping Itaipu Multicenter</p>
+              <!-- Any content you want here -->
+            </article>
+            <article class="tile is-child  notification is-warning">
+              <p>Segundo</p>
+              <!-- Any content you want here -->
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child  notification is-info">
+              <p>Terceiro</p>
+              <!-- Any content you want here -->
+            </article>
+          </div>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child  notification is-danger">
+            <p>Quarto</p>
+            <!-- Any content you want here -->
+          </article>
+        </div>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child  notification is-success">
+          <p>Quinto</p>
+          <!-- Any content you want here -->
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <script src='js/mapao.js'></script>
+</body>
+
 </html>

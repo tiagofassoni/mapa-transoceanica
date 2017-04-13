@@ -1,2 +1,35 @@
-  body { margin:0; padding:0; }
-  #map { position:absolute; top:0; bottom:0; width:100%; }
+body { margin:0; padding:0; }
+#map { position:absolute; top:0; bottom:0; width:100%; }
+
+.legend label,
+.legend span {
+  display:block;
+  float:left;
+  height:15px;
+  width:20%;
+  text-align:center;
+  font-size:9px;
+  color:#808080;
+  }
+
+
+#map > div.leaflet-control-container > div.leaflet-bottom.leaflet-left > div.map-legends.wax-legends.leaflet-control {
+  background-image: linear-gradient(to left, rgba(254, 77, 61, 0.85), rgba(244, 121, 42, 0.93));
+  /*opacity: 0.4;*/
+}
+
+#legenda-transoceanica-titulo {color: #fff}
+
+#navegue-pelo-mapa-em-amarelo {color: #FFD53D}
+
+#paragrafo-legenda-transoceanica {
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.5rem;
+  /*opacity:1 !important;*/
+  }
+
+#tile-grandao {
+  min-width: 70vw;
+  min-height:70vh;
+}
