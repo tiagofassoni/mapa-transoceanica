@@ -135,8 +135,8 @@
       "bicycle_lane_type": "ciclovia sobre calçada/pista compartilhada/calçada compartilhada",
       "status": "",
       "intervention": "",
-      "before_img": "",
-      "after_img": ""
+      "before_img": "https://transoceanica.hacklab.com.br/wp-content/uploads/2017/04/A1.jpg",
+      "after_img": "https://transoceanica.hacklab.com.br/wp-content/uploads/2017/04/Trecho-4-A2.png"
     },
     "geometry": {
       "type": "LineString",
