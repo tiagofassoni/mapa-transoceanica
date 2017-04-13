@@ -1,0 +1,59 @@
+{
+    "type": "FeatureCollection",
+    "features": [{
+            "type": "Feature",
+            "properties": {
+                "Id": 0,
+                "Nome": "Rótula do Cafubá"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.032118621431898, -22.946672798408073]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 1,
+                "Nome": "DPO Cafubá"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.057141016453862, -22.941857158864273]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 2,
+                "Nome": "Multicenter"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.066917925791529, -22.932241361931624]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 3,
+                "Nome": "Avenida Central"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.071492471049837, -22.936115562558854]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 4,
+                "Nome": "Engenho do Mato"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.028248845353438, -22.953876712153953]
+            }
+        }
+    ]
+}

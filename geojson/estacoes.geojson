@@ -1,0 +1,147 @@
+{
+    "type": "FeatureCollection",
+    "features": [{
+            "type": "Feature",
+            "properties": {
+                "Id": 0,
+                "Nome": "Terminal Charitas"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.099156924941582, -22.932983912438925]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 1,
+                "Nome": "Fazendinha, perto da AABB"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.027836101827724, -22.953465956285683]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 2,
+                "Nome": "Rótula Cafubá da Fazendinha"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.071492471049837, -22.936115562558854]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 3,
+                "Nome": "Próximo ao DPO do Cafubá"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.062171439465821, -22.93695713669074]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 4,
+                "Nome": "Antigo hospital Amil"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.076832354036362, -22.93384032340278]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 5,
+                "Nome": "Antes do Multicenter, ao lado do hospital"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.066387176311437, -22.932902255212987]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 6,
+                "Nome": "Próximo Avenida Santo Antônio"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.058293162268555, -22.940581324643816]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 7,
+                "Nome": "Antes da subestação da Enel e depois da Rua das Andorinhas"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.053185470556883, -22.941144829249538]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 8,
+                "Nome": "Próximo Rua São Marcio"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.045572534697158, -22.940222247395038]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 9,
+                "Nome": "Em frente ao Mercado Maravista"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.041020898843868, -22.94132555967791]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 10,
+                "Nome": "Rótula da Avenida Central"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.035431348758436, -22.944359498405188]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 11,
+                "Nome": "Perto do Rio João Mendes"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.032118621431898, -22.946672798408073]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 12,
+                "Nome": "Engenho do Mato"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.029690751946525, -22.949500499701855]
+            }
+        }
+    ]
+}

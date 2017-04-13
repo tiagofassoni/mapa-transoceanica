@@ -1,0 +1,92 @@
+{
+    "type": "FeatureCollection",
+    "features": [{
+            "type": "Feature",
+            "properties": {
+                "Id": 0,
+                "Nome": "Rua 14 de Abril, subida para o preventório"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.033599640782825, -22.945274337188263]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 1,
+                "Nome": "Em frente à AABB"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.037029522448499, -22.943679559830311]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 2,
+                "Nome": "Fazendinha"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.039845514382506, -22.941621722293242]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 3,
+                "Nome": "Jacaré"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.047511670234108, -22.940133204259308]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 4,
+                "Nome": "Rua dos Acadêmicos"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.055952434336966, -22.941776543254758]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 5,
+                "Nome": "Avenida Santo Antônio"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.059846731629598, -22.938788209430388]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 6,
+                "Nome": "Eduardo Lucio Picanço"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.079215707394297, -22.935911942446143]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Id": 7,
+                "Nome": "Augusto Vieira Jacques"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-43.097204665190119, -22.932051688051448]
+            }
+        }
+    ]
+}
