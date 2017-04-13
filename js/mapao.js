@@ -1,8 +1,11 @@
 $( document ).ready(function() {
 
   L.mapbox.accessToken = 'pk.eyJ1IjoianVzdHRlc3RpbmciLCJhIjoiMEg3ZWJTVSJ9.h41984pPh9afTYWBg2eoQQ';
-  var map = L.mapbox.map('map')
-      .setView([  -22.946643, -43.058642], 14);
+  var map = L.mapbox.map('map', 'mapbox.streets', {scrollWheelZoom: false})
+      .setView([  -22.946643, -43.058642], 14)
+      .on('click', function(e) {
+        map.scrollWheelZoom.enable();
+      });;
 
   // Use styleLayer to add a Mapbox style created in Mapbox Studio
   // L.mapbox.styleLayer('mapbox://styles/justtesting/cj1fp79gl00092rr091yoxrr6').addTo(map);
