@@ -88,8 +88,8 @@
       "bicycle_lane_type": "ciclovia sobre calçada",
       "status": "Concluído com 45 dias.",
       "intervention": "",
-      "before_img": "",
-      "after_img": ""
+      "before_img": "https://transoceanica.hacklab.com.br/wp-content/uploads/2017/04/trecho-3-Antes.png",
+      "after_img": "https://transoceanica.hacklab.com.br/wp-content/uploads/2017/04/trecho-3-depois.jpg"
     },
     "geometry": {
       "type": "LineString",
@@ -279,8 +279,8 @@
       "bicycle_lane_type": "calçada compartilhada / pista compartilhada nas ruas internas R. Prof. Alice Picanço e R. Jéferson Rocha",
       "status": "Será concluído em 120 dias pois falta a pista do sentido Rótula da Avenida Central",
       "intervention": "",
-      "before_img": "",
-      "after_img": ""
+      "before_img": "https://transoceanica.hacklab.com.br/wp-content/uploads/2017/04/trecho-7-antes.jpg",
+      "after_img": "https://transoceanica.hacklab.com.br/wp-content/uploads/2017/04/trecho-7-depois.jpg"
     },
     "geometry": {
       "type": "LineString",
@@ -321,8 +321,8 @@
       "bicycle_lane_type": "calçada compartilhada/ciclovia sobre calçada",
       "status": "Fazendo ponte e algumas desapropriações. Deve ser concluído em 60 dias.",
       "intervention": "",
-      "before_img": "",
-      "after_img": ""
+      "before_img": "https://transoceanica.hacklab.com.br/wp-content/uploads/2017/04/trecho-8-antes.jpg",
+      "after_img": "https://transoceanica.hacklab.com.br/wp-content/uploads/2017/04/trecho-8-depois.jpg"
     },
     "geometry": {
       "type": "LineString",
