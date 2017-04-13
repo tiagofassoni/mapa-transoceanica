@@ -5,7 +5,8 @@ $( document ).ready(function() {
       .setView([  -22.946643, -43.058642], 15);
 
   // Use styleLayer to add a Mapbox style created in Mapbox Studio
-  L.mapbox.styleLayer('mapbox://styles/justtesting/cj1fp79gl00092rr091yoxrr6').addTo(map);
+  // L.mapbox.styleLayer('mapbox://styles/justtesting/cj1fp79gl00092rr091yoxrr6').addTo(map);
+  L.mapbox.styleLayer('mapbox://styles/mapbox/streets-v10').addTo(map);
 
   // Pontos
   $.getJSON("geojson/estacoes.geojson", function(estacoesGeojson) {
