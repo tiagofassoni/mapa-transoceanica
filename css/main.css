@@ -39,6 +39,7 @@ body { margin:0; padding:0; }
   }
 
 #tile-grandao {
+  min-width: 75vw;
   max-width: 85vw;
   min-height:70vh;
 }
@@ -116,4 +117,9 @@ border-style: none none dotted dotted;
 .paragrafo-promocional-onibus > span {
   color: #FE4D3B;
   font-weight: bold;
+}
+
+/* parte de fechar janela */
+#tile-de-fechar-janela {  
+  max-height: 90px;
 }
