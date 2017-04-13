@@ -73,14 +73,17 @@ $( document ).ready(function() {
   });
 
 
-  var linesLegend = L.mapbox.legendControl({position: 'topright'}).addLegend(document.getElementById('legenda-linhas').innerHTML);
+var linesLegend = L.mapbox.legendControl({position: 'topright'}).addLegend(document.getElementById('legenda-linhas').innerHTML);
   linesLegend.addTo(map);
 
-var mostraLegal = L.mapbox.legendControl({'position': 'bottomleft'}).addLegend(document.getElementById('legenda-transoceanica-benvindo').innerHTML);
-mostraLegal.addTo(map);
+// var mostraLegal = L.mapbox.legendControl({'position': 'bottomleft'}).addLegend(document.getElementById('legenda-transoceanica-benvindo').innerHTML);
+// mostraLegal.addTo(map);
 
-var legendaGiganta = L.mapbox.legendControl({'position': 'bottomleft'}).addLegend(document.getElementById('teste-da-bagaca').innerHTML);
-legendaGiganta.addTo(map);
+var hoverDeBaixo = L.mapbox.legendControl({'position': 'bottomleft'}).addLegend(document.getElementById('hover-de-baixo').innerHTML);
+hoverDeBaixo.addTo(map);
+
+// var legendaGiganta = L.mapbox.legendControl({'position': 'bottomleft'}).addLegend(document.getElementById('teste-da-bagaca').innerHTML);
+// legendaGiganta.addTo(map);
 //Depois da legendaGiganta adicionada ao mapa (e, portanto, existindo), a gente acha o botão de fechar pelo id (que é mais confiável que o ego ou o superego)
 $('#botao-fechar-legenda-giganta').click(function() { map.removeControl(legendaGiganta) } );
 

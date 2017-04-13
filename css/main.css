@@ -45,13 +45,13 @@ body { margin:0; padding:0; }
 }
 
 /* Isto aqui é daquela parte vish-muita-treta de fazer o  menuzao em cima do leaflet */
-#titulo-da-parte-de-onibus {
+.titulo-da-parte-de-onibus {
   background-color: #fff;
   border-color: #fff;
   padding: 12px;
   
 }
-#titulo-da-parte-de-onibus > p {
+.titulo-da-parte-de-onibus > p {
   font-size: 20px;
   color: #FE4D3B;
 }
@@ -74,7 +74,7 @@ body { margin:0; padding:0; }
   background-color: #EEEDEB;
 }
 
-#resto-da-parte-de-onibus {
+.resto-da-parte-de-onibus {
   padding: 12px;
   line-height: 2.5;
   color: #9C9C9C;
