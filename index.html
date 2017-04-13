@@ -6,12 +6,13 @@
   <title>Add styles made with Mapbox Studio using styleLayer</title>
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
   <script src='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.js'></script>
-  <link href='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.css' rel='stylesheet' />
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
-
   <script src='js/vendors/cocoen.min.js'></script>
   <script src='js/vendors/cocoen-jquery.min.js'></script>
+  <script src='js/vendors/mustache.min.js'></script>
+
+  <link href='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.css' rel='stylesheet' />
   <link href='css/vendors/cocoen.min.css' rel='stylesheet' />
   <link href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css' rel='stylesheet' />
   <link href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css.map' rel='stylesheet' />
@@ -111,6 +112,9 @@
   </div>
 
   <div id='hover-de-baixo' style='display:none;'>
+  </div>
+
+  <script id="hover-bhs-line-template" type="x-tmpl-mustache">
     <div class="tile is-ancestor" id='tile-hover-de-baixo'>
       <div class="tile is-vertical is-12">
         <div class="tile">
@@ -125,8 +129,8 @@
               <div class="column" id='coluna-dos-textao-tudo'> <!-- a coluna dos textao tudo -->
                 <article class="tile is-child">
                   <div class="titulo-da-parte-de-onibus">
-                    <p>De: <b>Rótula do DPO Cafubá</b></p>
-                    <p>Até: <b>Shopping Itaipu Multicenter</b></p>
+                    <p>De: <b>{{ feature.from }}</b></p>
+                    <p>Até: <b>{{ feature.to }}</b></p>
                   </div>
                   <div class='resto-da-parte-de-onibus'>
                     <div class="columns" >
@@ -148,7 +152,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </script>
 
   <script src='js/mapao.js'></script>
 </body>
