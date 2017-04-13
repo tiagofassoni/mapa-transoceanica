@@ -2,7 +2,7 @@ $( document ).ready(function() {
 
   L.mapbox.accessToken = 'pk.eyJ1IjoianVzdHRlc3RpbmciLCJhIjoiMEg3ZWJTVSJ9.h41984pPh9afTYWBg2eoQQ';
   var map = L.mapbox.map('map')
-      .setView([  -22.946643, -43.058642], 15);
+      .setView([  -22.946643, -43.058642], 14);
 
   // Use styleLayer to add a Mapbox style created in Mapbox Studio
   // L.mapbox.styleLayer('mapbox://styles/justtesting/cj1fp79gl00092rr091yoxrr6').addTo(map);
@@ -37,13 +37,44 @@ $( document ).ready(function() {
     });
   });
 
+  var default_bhs_line_style = {
+    color: '#fd4d3d',
+    weight: 9
+  }
+
+  function highlightFeature(e) {
+      var layer = e.target;
+      // console.log('Entrou highlightFeature!!!!');
+      layer.setStyle({
+          weight: 15,
+          color: '#FAA286',
+      //     dashArray: '',
+      //     fillOpacity: 0.7
+      });
+
+      // if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+      //     layer.bringToFront();
+      // }
+  }
+
+  function resetHighlight(e) {
+    // console.log('Entrou reset!!!!');
+      var layer = e.target;
+      layer.setStyle(default_bhs_line_style);
+  }
+
   $.getJSON("geojson/bhs.geojson", function(bhsGeojson) {
     L.geoJSON(bhsGeojson, {
       style: function (feature) {
-          return {
-            color: '#fd4d3d',
-            weight: 8
-          };
+          return default_bhs_line_style;
+      },
+      onEachFeature: function (feature, layer) {
+        layer.on({
+          mouseover: highlightFeature,
+          mouseout: resetHighlight,
+          // click: zoomToFeature
+        });
+        // layer.bindPopup(feature.properties.name);
       }
     }).addTo(map);
     // }).bindPopup(function (layer) {
@@ -74,17 +105,18 @@ $( document ).ready(function() {
   });
 
 
+
 var linesLegend = L.mapbox.legendControl({position: 'topright'}).addLegend(document.getElementById('legenda-linhas').innerHTML);
   linesLegend.addTo(map);
 
 // var mostraLegal = L.mapbox.legendControl({'position': 'bottomleft'}).addLegend(document.getElementById('legenda-transoceanica-benvindo').innerHTML);
 // mostraLegal.addTo(map);
 
-var hoverDeBaixo = L.mapbox.legendControl({'position': 'bottomleft'}).addLegend(document.getElementById('hover-de-baixo').innerHTML);
-hoverDeBaixo.addTo(map);
+// var hoverDeBaixo = L.mapbox.legendControl({'position': 'bottomleft'}).addLegend(document.getElementById('hover-de-baixo').innerHTML);
+// hoverDeBaixo.addTo(map);
 
-// var legendaGiganta = L.mapbox.legendControl({'position': 'bottomleft'}).addLegend(document.getElementById('teste-da-bagaca').innerHTML);
-// legendaGiganta.addTo(map);
+var legendaGiganta = L.mapbox.legendControl({'position': 'bottomleft'}).addLegend(document.getElementById('teste-da-bagaca').innerHTML);
+legendaGiganta.addTo(map);
 //Depois da legendaGiganta adicionada ao mapa (e, portanto, existindo), a gente acha o botão de fechar pelo id (que é mais confiável que o ego ou o superego)
 $('#botao-fechar-legenda-giganta').click(function() { map.removeControl(legendaGiganta) } );
 
