@@ -151,6 +151,6 @@ border-style: none none dotted dotted;
 }
 
 /* Diminuir tamanho das fotos */
-/*.cocoen > img {
+.cocoen > img {
   max-height: 350px;
-}*/
+}
