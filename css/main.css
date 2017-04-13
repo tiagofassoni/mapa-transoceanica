@@ -51,13 +51,22 @@ body { margin:0; padding:0; }
   
 }
 #titulo-da-parte-de-onibus > p {
-  font-size: 20pt;
+  font-size: 20px;
+  color: #FE4D3B;
 }
 
 
 #coluna-do-desenho-do-onibus {
   background-color: #FD4D3D ; 
   padding: 12px;
+}
+#coluna-do-desenho-do-onibus > p {
+  color: #fff;
+  font-size: 10px;
+  line-height: 1;
+}
+#coluna-do-desenho-do-onibus > p > span {
+  font-weight: bold;
 }
 
 #coluna-dos-textao-tudo {
@@ -66,5 +75,45 @@ body { margin:0; padding:0; }
 
 #resto-da-parte-de-onibus {
   padding: 12px;
-  line-height: 2.5rem;
+  line-height: 2.5;
+  color: #9C9C9C;
+}
+
+.texto-promocional-onibus-coluna {
+  text-align: center;
+  font-weight: bold;
+  
+}
+
+.texto-promocional-onibus-coluna-huge {
+  color: #FE4D3B;
+  font-size: 24px;
+}
+
+#resto-da-parte-de-onibus-primeira-coluna {
+  border-width: 1px;
+  /* top | right | bottom | left */
+border-style: none none dotted none;
+
+}
+
+#resto-da-parte-de-onibus-segunda-coluna {
+  border-width: 1px;
+border-style: none none dotted dotted;
+}
+
+#resto-da-parte-de-onibus-terceira-coluna {
+  border-width: 1px;
+border-style: none none dotted dotted;
+}
+
+.paragrafo-promocional-onibus {
+  /*line-height: 20px;*/
+  padding-bottom: 10px;
+  border-bottom-style: dotted;
+  border-width: 1px;
+}
+.paragrafo-promocional-onibus > span {
+  color: #FE4D3B;
+  font-weight: bold;
 }
