@@ -81,6 +81,8 @@ mostraLegal.addTo(map);
 
 var legendaGiganta = L.mapbox.legendControl({'position': 'bottomleft'}).addLegend(document.getElementById('teste-da-bagaca').innerHTML);
 legendaGiganta.addTo(map);
+//Depois da legendaGiganta adicionada ao mapa (e, portanto, existindo), a gente acha o botão de fechar pelo id (que é mais confiável que o ego ou o superego)
+$('#botao-fechar-legenda-giganta').click(function() { map.removeControl(legendaGiganta) } );
 
   // Inicia o antes e depois
   $('.cocoen').cocoen();
