@@ -13,7 +13,8 @@ body { margin:0; padding:0; }
   }
 
 
-#map > div.leaflet-control-container > div.leaflet-bottom.leaflet-left > div.map-legends.wax-legends.leaflet-control {
+/*#map > div.leaflet-control-container > div.leaflet-bottom.leaflet-left > div.map-legends.wax-legends.leaflet-control {*/
+#legenda-container {
   background-image: linear-gradient(to left, rgba(254, 77, 61, 0.85), rgba(244, 121, 42, 0.93));
   /*opacity: 0.4;*/
 }
