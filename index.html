@@ -55,7 +55,7 @@ L.mapbox.styleLayer('mapbox://styles/justtesting/cj1fp79gl00092rr091yoxrr6').add
         console.dir(marker);
         L.marker([marker.geometry.coordinates[1], marker.geometry.coordinates[0]], {
             'icon': L.mapbox.marker.icon({'marker-symbol': 'bus','marker-color': '#422'}),
-            'riseOnHover': true
+            //'riseOnHover': true
         }).addTo(map);
         
     });
