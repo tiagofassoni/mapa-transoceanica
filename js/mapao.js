@@ -41,7 +41,7 @@ $( document ).ready(function() {
       style: function (feature) {
           return {
             color: '#fd4d3d',
-            weight: 10
+            weight: 8
           };
       }
     }).addTo(map);
@@ -50,18 +50,24 @@ $( document ).ready(function() {
 
   });
 
-  $.getJSON("geojson/carros.geojson", function(carrosGeojson) {
-    L.geoJSON(carrosGeojson, {
+  $.getJSON("geojson/ciclovias.geojson", function(cicloviasGeojson) {
+    L.geoJSON(cicloviasGeojson, {
       style: function (feature) {
-          return {color: '#f58b33'};
+          return {
+            color: '#8dc53f',
+            weight: 4
+          };
       }
     }).addTo(map);
   });
 
-  $.getJSON("geojson/ciclovias.geojson", function(cicloviasGeojson) {
-    L.geoJSON(cicloviasGeojson, {
+  $.getJSON("geojson/carros.geojson", function(carrosGeojson) {
+    L.geoJSON(carrosGeojson, {
       style: function (feature) {
-          return {color: '#8dc53f'};
+          return {
+            color: '#f58b33',
+            weight: 5
+          };
       }
     }).addTo(map);
   });
@@ -73,6 +79,3 @@ var legendaGiganta = L.mapbox.legendControl({'position': 'bottomleft'}).addLegen
 legendaGiganta.addTo(map);
 
 });
-
-
-
