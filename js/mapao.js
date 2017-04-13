@@ -51,12 +51,15 @@ $( document ).ready(function() {
 
   var bhs_line_legends_hover = {};
   var bhs_line_legends_click = {};
+  // var cocoen_started = false;
+  var bhs_line_legends_click_displayed = false;
   // var hoverDeBaixo = L.mapbox.legendControl({'position': 'bottomleft'})
   // hoverDeBaixo.onAdd = function(map){
   //   return document.getElementById('hover-de-baixo').innerHTML;
   // };
 
   function highlightFeature(e) {
+    if (bhs_line_legends_click_displayed === false) {
       var layer = e.target;
       // console.log('Entrou highlightFeature!!!!');
       layer.setStyle({
@@ -75,6 +78,7 @@ $( document ).ready(function() {
       // if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
       //     layer.bringToFront();
       // }
+    }
   }
 
   function resetHighlight(e) {
@@ -85,31 +89,33 @@ $( document ).ready(function() {
       layer.setStyle(default_bhs_line_style);
   }
 
-  var cocoen_started = false;
-
   function showFeatureDetails(e) {
-    var layer = e.target;
+    if (bhs_line_legends_click_displayed === false) {
+      bhs_line_legends_click_displayed = true;
 
-    map.removeControl(bhs_line_legends_hover[layer.feature.properties.Id]);
-
-    var legendaGiganta = L.mapbox.legendControl({'position': 'bottomleft'}).addLegend(document.getElementById('teste-da-bagaca').innerHTML);
-    legendaGiganta.addTo(map);
-
-    $('#botao-fechar-legenda-giganta').click(function(e) {
-      var bla;
       var layer = e.target;
-        map.removeControl(legendaGiganta)
-    });
 
-    // Inicia o antes e depois
-    if (cocoen_started === false) {
+      map.removeControl(bhs_line_legends_hover[layer.feature.properties.Id]);
+
+      var legendaGiganta = L.mapbox.legendControl({'position': 'bottomleft'}).addLegend(document.getElementById('teste-da-bagaca').innerHTML);
+      legendaGiganta.addTo(map);
+
+      $('#botao-fechar-legenda-giganta').click(function(e) {
+
+        // var layer = e.target;
+          map.removeControl(legendaGiganta);
+          bhs_line_legends_click_displayed = false;
+      });
+
+      // Inicia o antes e depois
+      // if (cocoen_started === false) {
       $('.cocoen').cocoen();
-      cocoen_started = true;
+        // cocoen_started = true;
+      // }
+
+      // bhs_line_legends_click[layer.feature.properties.Id].addLegend(document.getElementById('teste-da-bagaca').innerHTML);
+      // map.addControl(bhs_line_legends_click[layer.feature.properties.Id]);
     }
-
-
-    // bhs_line_legends_click[layer.feature.properties.Id].addLegend(document.getElementById('teste-da-bagaca').innerHTML);
-    // map.addControl(bhs_line_legends_click[layer.feature.properties.Id]);
   }
 
   $.getJSON("geojson/bhs.geojson", function(bhsGeojson) {
