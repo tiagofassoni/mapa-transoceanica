@@ -5,7 +5,9 @@ $( document ).ready(function() {
       .setView([  -22.946643, -43.058642], 14)
       .on('click', function(e) {
         map.scrollWheelZoom.enable();
+        map.dragging.enable();
       });;
+      map.dragging.disable()
 
   // Use styleLayer to add a Mapbox style created in Mapbox Studio
   // L.mapbox.styleLayer('mapbox://styles/justtesting/cj1fp79gl00092rr091yoxrr6').addTo(map);
