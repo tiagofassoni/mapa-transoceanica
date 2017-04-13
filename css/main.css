@@ -123,3 +123,15 @@ border-style: none none dotted dotted;
 #tile-de-fechar-janela {  
   max-height: 90px;
 }
+
+/* Tile do antes e depois */
+#tile-do-antes-e-depois > p {
+  color: #fff;
+  text-align: center;
+  background-color: #FD4D3D;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#tile-do-antes-e-depois > p > span {
+  color: #FFD53D;
+}
