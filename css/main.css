@@ -33,15 +33,15 @@ body { margin:0; padding:0; }
 
 #paragrafo-legenda-transoceanica {
   color: #fff;
-  font-size: 20px;
-  line-height: 1.5rem;
+  font-size: 18px;
+  /*line-height: 1.5rem;*/
   /*opacity:1 !important;*/
   }
 
 #tile-grandao {
   min-width: 75vw;
   max-width: 85vw;
-  min-height:70vh;
+  /*min-height:vh;*/
 }
 
 /* Isto aqui é daquela parte vish-muita-treta de fazer o  menuzao em cima do leaflet */
@@ -52,7 +52,7 @@ body { margin:0; padding:0; }
   
 }
 .titulo-da-parte-de-onibus > p {
-  font-size: 20px;
+  font-size: 18px;
   color: #FE4D3B;
 }
 
@@ -110,7 +110,7 @@ border-style: none none dotted dotted;
 
 .paragrafo-promocional-onibus {
   /*line-height: 20px;*/
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   border-bottom-style: dotted;
   border-width: 1px;
 }
@@ -121,7 +121,7 @@ border-style: none none dotted dotted;
 
 /* parte de fechar janela */
 #tile-de-fechar-janela {  
-  max-height: 90px;
+  max-height: 48px;
 }
 
 /* Tile do antes e depois */
@@ -148,4 +148,9 @@ border-style: none none dotted dotted;
   height: 10px;
   margin: 5px;
   border: 1px solid rgba(0, 0, 0, .2);
+}
+
+/* Diminuir tamanho das fotos */
+.cocoen > img {
+  max-height: 350px;
 }
