@@ -72,10 +72,17 @@ $( document ).ready(function() {
     }).addTo(map);
   });
 
+
+  var linesLegend = L.mapbox.legendControl({position: 'topright'}).addLegend(document.getElementById('legenda-linhas').innerHTML);
+  linesLegend.addTo(map);
+
 var mostraLegal = L.mapbox.legendControl({'position': 'bottomleft'}).addLegend(document.getElementById('legenda-transoceanica-benvindo').innerHTML);
 mostraLegal.addTo(map);
 
 var legendaGiganta = L.mapbox.legendControl({'position': 'bottomleft'}).addLegend(document.getElementById('teste-da-bagaca').innerHTML);
 legendaGiganta.addTo(map);
+
+  // Inicia o antes e depois
+  $('.cocoen').cocoen();
 
 });

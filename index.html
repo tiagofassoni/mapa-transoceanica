@@ -9,6 +9,10 @@
   <link href='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.css' rel='stylesheet' />
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
+
+  <script src='js/vendors/cocoen.min.js'></script>
+  <script src='js/vendors/cocoen-jquery.min.js'></script>
+  <link href='css/vendors/cocoen.min.css' rel='stylesheet' />
   <link href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css' rel='stylesheet' />
   <link href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css.map' rel='stylesheet' />
   <link href='css/main.css' rel='stylesheet' />
@@ -17,6 +21,12 @@
 
 <body>
   <div id='map'></div>
+
+  <div id='legenda-linhas' class="legenda-linhas" style='display:none;'>
+    <i style="background: #fd4d3d"></i> Ônibus BHS<br>
+    <i style="background: #8dc53f"></i> Carros<br>
+    <i style="background: #f58b33"></i> Ciclovia<br>
+  </div>
 
   <div id='legenda-transoceanica-benvindo' class='legenda' style='display:none;'>
     <div id='legenda-container'>
@@ -75,6 +85,12 @@
             </article>
             <article class="tile is-child  notification is-info">
               <p>Terceiro</p>
+              <div class="cocoen">
+                 <!-- The before image is first -->
+                 <img src="http://placehold.it/400x200&text=1111" />
+                 <!-- The after image is last -->
+                 <img src="http://placehold.it/400x200&text=222" />
+              </div>
             </article>
           </div>
         </div>
