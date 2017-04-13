@@ -43,6 +43,9 @@
   </div>
 
   <div id='teste-da-bagaca' style='display:none;'>
+
+  </div>
+  <script id="click-bhs-line-template" type="x-tmpl-mustache">
     <div class="tile is-ancestor" id='tile-grandao'>
       <div class="tile is-vertical is-12">
         <div class="tile">
@@ -57,26 +60,26 @@
               <div class="column" id='coluna-dos-textao-tudo'> <!-- a coluna dos textao tudo -->
                 <article class="tile is-child">
                   <div class="titulo-da-parte-de-onibus">
-                    <p>De: <b>Rótula do DPO Cafubá</b></p>
-                    <p>Até: <b>Shopping Itaipu Multicenter</b></p>
+                    <p>De: <b>{{ feature.from }}</b></p>
+                    <p>Até: <b>{{ feature.to  }}</b></p>
                   </div>
                   <div class='resto-da-parte-de-onibus'>
                     <div class="columns" >
                         <div class="column" id='resto-da-parte-de-onibus-primeira-coluna'>
-                            <p class='texto-promocional-onibus-coluna'>Extensão: <br /> <span class='texto-promocional-onibus-coluna-huge'>1km</span></p>
+                            <p class='texto-promocional-onibus-coluna'>Extensão: <br /> <span class='texto-promocional-onibus-coluna-huge'>{{{ feature.extension }}}</span></p>
                         </div>
                         <div class="column" id='resto-da-parte-de-onibus-segunda-coluna'>
-                            <p class='texto-promocional-onibus-coluna'>Estações de BHS: <br/><span class='texto-promocional-onibus-coluna-huge'>3</span></p>
+                            <p class='texto-promocional-onibus-coluna'>Estações de BHS: <br/><span class='texto-promocional-onibus-coluna-huge'>{{ feature.bhs_stations }}</span></p>
                         </div>
                         <div class="column" id='resto-da-parte-de-onibus-terceira-coluna'>
-                          <p class='texto-promocional-onibus-coluna'>Percentual Concluído: <br /><span class='texto-promocional-onibus-coluna-huge'>85%</span></p>
+                          <p class='texto-promocional-onibus-coluna'>Percentual Concluído: <br /><span class='texto-promocional-onibus-coluna-huge'>{{ feature.percent_done }}</span></p>
                         </div>
                     </div> <!-- fim de colunas -->
-                    <p class='paragrafo-promocional-onibus'>Extensão de estrutura cicloviária: <span>1 km</span></p>
-                    <p class='paragrafo-promocional-onibus'>Tipo de estrutura cicloviária: <span>compartilhada</span></p>
-                    <p class='paragrafo-promocional-onibus'>Percentual Concluído: <span>85%</span></p>
-                    <p class='paragrafo-promocional-onibus'>Andamento: <span>Rótula do DPO do Cafubá está quase pronta, falta segmento que vai em direção à Pendotiba. Pavimentação em conclusão. Falta fazer passagem do Jacaré, em frente ao supermercado Real e a pista lateral do lado direito.</span></p>
-                    <p class='paragrafo-promocional-onibus'>Intervenções em vias de acesso e adjacentes: <span>um monte de lorem ipsum aí</span></p>
+                    <p class='paragrafo-promocional-onibus'>Extensão de estrutura cicloviária: <span> {{ feature.bicycle_lane }} </span></p>
+                    <p class='paragrafo-promocional-onibus'>Tipo de estrutura cicloviária: <span> {{ feature.bicycle_lane_type }}</span></p>
+                    <p class='paragrafo-promocional-onibus'>Percentual Concluído: <span>{{ feature.percent_done }}</span></p>
+                    <p class='paragrafo-promocional-onibus'>Andamento: <span>{{ feature.status }}</span></p>
+                    <p class='paragrafo-promocional-onibus'>Intervenções em vias de acesso e adjacentes: <span>{{ feature.intervention }}</span></p>
                   </div>
                 </article>
               </div>
@@ -88,28 +91,28 @@
                 <div class="column is-one-quarter">
                   <figure class="image is-48x48">
                     <img src='https://github.com/tiagofassoni/mapa-transoceanica/raw/master/img/fechar.png' alt='fechar' id= 'botao-fechar-legenda-giganta' height='48px' width="48px"/>
-                    <!--<img src="http://bulma.io/images/placeholders/128x128.png">-->
                   </figure>
 
                 </div>
               </div>
             </article>
+            {{ #feature.before_img }}
             <article class="tile is-child" id="tile-do-antes-e-depois">
               <!--<p>Terceiro</p>-->
               <div class="cocoen">
                  <!-- The before image is first -->
-                 <img src="https://transoceanica.hacklab.com.br/wp-content/uploads/2017/04/Trecho-1-Antes-2.png" />
+                 <img src="{{ feature.before_img }}" />
                  <!-- The after image is last -->
-                 <img src="https://transoceanica.hacklab.com.br/wp-content/uploads/2017/04/Trecho-1-Depois-2.jpg" />
-
+                 <img src="{{ feature.after_img }}" />
               </div>
               <p><span>Clique e arraste</span> para comparar<br />antes e depois no local</p>
             </article>
+            {{ /feature.before_img }}
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </script>
 
   <div id='hover-de-baixo' style='display:none;'>
   </div>
@@ -135,13 +138,13 @@
                   <div class='resto-da-parte-de-onibus'>
                     <div class="columns" >
                         <div class="column" id='resto-da-parte-de-onibus-primeira-coluna'>
-                            <p class='texto-promocional-onibus-coluna'>Extensão: <br /> <span class='texto-promocional-onibus-coluna-huge'>1km</span></p>
+                            <p class='texto-promocional-onibus-coluna'>Extensão: <br /> <span class='texto-promocional-onibus-coluna-huge'>{{ feature.extension }}</span></p>
                         </div>
                         <div class="column" id='resto-da-parte-de-onibus-segunda-coluna'>
-                            <p class='texto-promocional-onibus-coluna'>Estações de BHS: <br/><span class='texto-promocional-onibus-coluna-huge'>3</span></p>
+                            <p class='texto-promocional-onibus-coluna'>Estações de BHS: <br/><span class='texto-promocional-onibus-coluna-huge'>{{ feature.bhs_stations }}</span></p>
                         </div>
                         <div class="column" id='resto-da-parte-de-onibus-terceira-coluna'>
-                          <p class='texto-promocional-onibus-coluna'>Percentual Concluído: <br /><span class='texto-promocional-onibus-coluna-huge'>85%</span></p>
+                          <p class='texto-promocional-onibus-coluna'>Percentual Concluído: <br /><span class='texto-promocional-onibus-coluna-huge'>{{ feature.percent_done }}</span></p>
                         </div>
                     </div> <!-- fim de colunas -->
                   </div>
