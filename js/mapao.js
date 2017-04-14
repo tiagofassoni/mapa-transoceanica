@@ -16,8 +16,7 @@ $( document ).ready(function() {
   // L.mapbox.styleLayer('mapbox://styles/justtesting/cj1fp79gl00092rr091yoxrr6').addTo(map);
   L.mapbox.styleLayer('mapbox://styles/mapbox/streets-v10').addTo(map);
 
-  var linesLegend = L.mapbox.legendControl({position: 'topright'}).addLegend(document.getElementById('legenda-linhas').innerHTML);
-    linesLegend.addTo(map);
+  L.mapbox.legendControl({position: 'topright'}).addLegend(document.getElementById('legenda-linhas').innerHTML).addTo(map);
 
   var mostraLegal = L.mapbox.legendControl({'position': 'bottomleft'}).addLegend(document.getElementById('legenda-transoceanica-benvindo').innerHTML);
   mostraLegal.addTo(map);
