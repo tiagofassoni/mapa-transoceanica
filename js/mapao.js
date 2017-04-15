@@ -147,33 +147,76 @@ $( document ).ready(function() {
     }).addTo(map);
   });
 
+  function markerClickCallback(feature, layer, type) {
+  // does this feature have a property named popupContent?
+  if (feature.properties && feature.properties.name) {
+    var className = type + '-popup';
+    layer.bindPopup(feature.properties.name, {
+      className: className,
+      closeButton: false
+    });
+  }
+}
+
+  var bhs_station_icon = L.icon({
+    iconUrl: 'img/bhs-station-icon.png',
+    iconSize:     [25, 45], // size of the icon
+    iconAnchor:   [12.5, 45], // point of the icon which will correspond to marker's location
+    popupAnchor:  [-3, -50] // point from which the popup should open relative to the iconAnchor
+  });
+
+  var passages_icon = L.icon({
+    iconUrl: 'img/passages-icon.png',
+    iconSize:     [25, 45], // size of the icon
+    iconAnchor:   [12.5, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [-4, 15] // point from which the popup should open relative to the iconAnchor
+  });
+
+  var return_icon = L.icon({
+    iconUrl: 'img/return-icon.png',
+    iconSize:     [25, 45], // size of the icon
+    iconAnchor:   [12.5, 0], // point of the icon which will correspond to marker's location
+    popupAnchor:  [-4, 15] // point from which the popup should open relative to the iconAnchor
+  });
+
   // Pontos
   $.getJSON("geojson/estacoes.geojson", function(estacoesGeojson) {
-      estacoesGeojson.features.forEach(function(marker) {
-          L.marker([marker.geometry.coordinates[1], marker.geometry.coordinates[0]], {
-              'icon': L.mapbox.marker.icon({'marker-symbol': 'bus','marker-color': '#fd4d3d'}), // bus
-              //'riseOnHover': true
-          }).addTo(map);
-
-      });
+    L.geoJSON(estacoesGeojson, {
+      pointToLayer: function (feature, latlng) {
+        return L.marker(latlng, {
+          'icon': bhs_station_icon
+        }).addTo(map);
+      },
+      onEachFeature: function(feature, layer) {
+        return markerClickCallback(feature, layer, 'bhs-stations');
+      }
+    }).addTo(map);
   });
 
   $.getJSON("geojson/retornos.geojson", function(retornosGeojson) {
-    retornosGeojson.features.forEach(function(marker) {
-        L.marker([marker.geometry.coordinates[1], marker.geometry.coordinates[0]], {
-            'icon': L.mapbox.marker.icon({'marker-symbol': 'circle-stroked','marker-color': '#8dc53f'}), // ciclovia
-            //'riseOnHover': true
+    L.geoJSON(retornosGeojson, {
+      pointToLayer: function (feature, latlng) {
+        return L.marker(latlng, {
+          'icon': return_icon
         }).addTo(map);
-    });
+      },
+      onEachFeature: function(feature, layer) {
+        return markerClickCallback(feature, layer, 'returns');
+      }
+    }).addTo(map);
   });
 
   $.getJSON("geojson/passagens.geojson", function(passagensGeojson) {
-    passagensGeojson.features.forEach(function(marker) {
-        L.marker([marker.geometry.coordinates[1], marker.geometry.coordinates[0]], {
-            'icon': L.mapbox.marker.icon({'marker-symbol': 'car','marker-color': '#f58b33'}), //carros
-            //'riseOnHover': true
+    L.geoJSON(passagensGeojson, {
+      pointToLayer: function (feature, latlng) {
+        return L.marker(latlng, {
+          'icon': passages_icon
         }).addTo(map);
-    });
+      },
+      onEachFeature: function(feature, layer) {
+        return markerClickCallback(feature, layer, 'passages');
+      }
+    }).addTo(map);
   });
 
 });

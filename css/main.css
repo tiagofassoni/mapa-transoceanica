@@ -49,7 +49,7 @@ body { margin:0; padding:0; }
   background-color: #fff;
   border-color: #fff;
   padding: 12px;
-  
+
 }
 .titulo-da-parte-de-onibus > p {
   font-size: 18px;
@@ -58,7 +58,7 @@ body { margin:0; padding:0; }
 
 
 #coluna-do-desenho-do-onibus {
-  background-color: #FD4D3D ; 
+  background-color: #FD4D3D ;
   padding: 12px;
 }
 #coluna-do-desenho-do-onibus > p {
@@ -83,7 +83,7 @@ body { margin:0; padding:0; }
 .texto-promocional-onibus-coluna {
   text-align: center;
   font-weight: bold;
-  
+
 }
 
 .texto-promocional-onibus-coluna-huge {
@@ -120,7 +120,7 @@ border-style: none none dotted dotted;
 }
 
 /* parte de fechar janela */
-#tile-de-fechar-janela {  
+#tile-de-fechar-janela {
   max-height: 48px;
 }
 
@@ -140,7 +140,7 @@ border-style: none none dotted dotted;
 #legenda-linhas-interno {
   background-color: #fff;
   padding: 5px;
-  border-radius: 3px; 
+  border-radius: 3px;
 }
 .quadrado {
   float: left;
@@ -153,4 +153,37 @@ border-style: none none dotted dotted;
 /* Diminuir tamanho das fotos */
 .cocoen > img {
   max-height: 320px;
+}
+
+.bhs-stations-popup .leaflet-popup-content-wrapper {
+  background: #fd4d3d;
+  color: #fff !important;
+}
+
+.bhs-stations-popup .leaflet-popup-tip {
+ border-left:15px solid transparent;
+ border-right:15px solid transparent;
+ border-top:15px solid #fd4d3d;
+}
+
+.returns-popup .leaflet-popup-content-wrapper {
+  background: #8dc53f;
+  color: #fff !important;
+}
+
+.returns-popup .leaflet-popup-tip {
+  border-left:15px solid transparent;
+  border-right:15px solid transparent;
+  border-top:15px solid #8dc53f;
+}
+
+.passages-popup .leaflet-popup-content-wrapper {
+  background: #f58b33;
+  color: #fff !important;
+}
+
+.passages-popup .leaflet-popup-tip {
+  border-left:15px solid transparent;
+  border-right:15px solid transparent;
+  border-top:15px solid #f58b33;
 }
