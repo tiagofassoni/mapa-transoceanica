@@ -4,7 +4,8 @@
             "type": "Feature",
             "properties": {
                 "Id": 0,
-                "Nome": "Terminal Charitas"
+                "name": "Terminal Charitas",
+                "type": "bottom-right"
             },
             "geometry": {
                 "type": "Point",
@@ -15,7 +16,8 @@
             "type": "Feature",
             "properties": {
                 "Id": 1,
-                "Nome": "Fazendinha, perto da AABB"
+                "name": "Estação Fazendinha, perto da AABB",
+                "type": "right"
             },
             "geometry": {
                 "type": "Point",
@@ -26,7 +28,8 @@
             "type": "Feature",
             "properties": {
                 "Id": 2,
-                "Nome": "Rótula Cafubá da Fazendinha"
+                "name": "Estação Rótula Cafubá da Fazendinha",
+                "type": "top"
             },
             "geometry": {
                 "type": "Point",
@@ -37,7 +40,8 @@
             "type": "Feature",
             "properties": {
                 "Id": 3,
-                "Nome": "Próximo ao DPO do Cafubá"
+                "name": "Estação Próximo ao DPO do Cafubá",
+                "type": "top-right"
             },
             "geometry": {
                 "type": "Point",
@@ -48,7 +52,8 @@
             "type": "Feature",
             "properties": {
                 "Id": 4,
-                "Nome": "Antigo hospital Amil"
+                "name": "Estação Antigo hospital Amil",
+                "type": "top"
             },
             "geometry": {
                 "type": "Point",
@@ -59,7 +64,8 @@
             "type": "Feature",
             "properties": {
                 "Id": 5,
-                "Nome": "Antes do Multicenter, ao lado do hospital"
+                "name": "Estação Antes do Multicenter, ao lado do hospital",
+                "type": "top-right"
             },
             "geometry": {
                 "type": "Point",
@@ -70,7 +76,8 @@
             "type": "Feature",
             "properties": {
                 "Id": 6,
-                "Nome": "Próximo Avenida Santo Antônio"
+                "name": "Estação Próximo Avenida Santo Antônio",
+                "type": "top-right"
             },
             "geometry": {
                 "type": "Point",
@@ -81,7 +88,8 @@
             "type": "Feature",
             "properties": {
                 "Id": 7,
-                "Nome": "Antes da subestação da Enel e depois da Rua das Andorinhas"
+                "name": "Estação Antes da subestação da Enel e depois da Rua das Andorinhas",
+                "type": "top"
             },
             "geometry": {
                 "type": "Point",
@@ -92,7 +100,8 @@
             "type": "Feature",
             "properties": {
                 "Id": 8,
-                "Nome": "Próximo Rua São Marcio"
+                "name": "Estação Próximo Rua São Marcio",
+                "type": "top"
             },
             "geometry": {
                 "type": "Point",
@@ -103,7 +112,8 @@
             "type": "Feature",
             "properties": {
                 "Id": 9,
-                "Nome": "Em frente ao Mercado Maravista"
+                "name": "Estação em frente ao Mercado Maravista",
+                "type": "top"
             },
             "geometry": {
                 "type": "Point",
@@ -114,7 +124,8 @@
             "type": "Feature",
             "properties": {
                 "Id": 10,
-                "Nome": "Rótula da Avenida Central"
+                "name": "Estação Rótula da Avenida Central",
+                "type": "top-right"
             },
             "geometry": {
                 "type": "Point",
@@ -125,7 +136,8 @@
             "type": "Feature",
             "properties": {
                 "Id": 11,
-                "Nome": "Perto do Rio João Mendes"
+                "name": "Estação Perto do Rio João Mendes",
+                "type": "top-right"
             },
             "geometry": {
                 "type": "Point",
@@ -136,7 +148,8 @@
             "type": "Feature",
             "properties": {
                 "Id": 12,
-                "Nome": "Engenho do Mato"
+                "name": "Estação Engenho do Mato",
+                "type": "top-right"
             },
             "geometry": {
                 "type": "Point",

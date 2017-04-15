@@ -1,10 +1,12 @@
 {
     "type": "FeatureCollection",
+    "name": "returns",
     "features": [{
             "type": "Feature",
             "properties": {
                 "Id": 0,
-                "Nome": "Rótula do Cafubá"
+                "name": "Retorno: Rótula do Cafubá",
+                "type": "top"
             },
             "geometry": {
                 "type": "Point",
@@ -15,7 +17,8 @@
             "type": "Feature",
             "properties": {
                 "Id": 1,
-                "Nome": "DPO Cafubá"
+                "name": "Retorno: DPO Cafubá",
+                "type": "top"
             },
             "geometry": {
                 "type": "Point",
@@ -26,7 +29,8 @@
             "type": "Feature",
             "properties": {
                 "Id": 2,
-                "Nome": "Multicenter"
+                "name": "Retorno: Multicenter",
+                "type": "top"
             },
             "geometry": {
                 "type": "Point",
@@ -37,7 +41,8 @@
             "type": "Feature",
             "properties": {
                 "Id": 3,
-                "Nome": "Avenida Central"
+                "name": "Retorno: Avenida Central",
+                "type": "top"
             },
             "geometry": {
                 "type": "Point",
@@ -48,7 +53,8 @@
             "type": "Feature",
             "properties": {
                 "Id": 4,
-                "Nome": "Engenho do Mato"
+                "name": "Retorno: Engenho do Mato",
+                "type": "top"
             },
             "geometry": {
                 "type": "Point",

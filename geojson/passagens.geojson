@@ -1,10 +1,12 @@
 {
     "type": "FeatureCollection",
+    "name": "passages",
     "features": [{
             "type": "Feature",
             "properties": {
                 "Id": 0,
-                "Nome": "Rua 14 de Abril, subida para o preventório"
+                "name": "Passagem: Rua 14 de Abril, subida para o preventório",
+                "type": "bottom"
             },
             "geometry": {
                 "type": "Point",
@@ -15,7 +17,8 @@
             "type": "Feature",
             "properties": {
                 "Id": 1,
-                "Nome": "Em frente à AABB"
+                "name": "Passagem: Em frente à AABB",
+                "type": "bottom"
             },
             "geometry": {
                 "type": "Point",
@@ -26,7 +29,8 @@
             "type": "Feature",
             "properties": {
                 "Id": 2,
-                "Nome": "Fazendinha"
+                "name": "Passagem: Fazendinha",
+                "type": "bottom"
             },
             "geometry": {
                 "type": "Point",
@@ -37,7 +41,8 @@
             "type": "Feature",
             "properties": {
                 "Id": 3,
-                "Nome": "Jacaré"
+                "name": "Passagem: Jacaré",
+                "type": "bottom"
             },
             "geometry": {
                 "type": "Point",
@@ -48,7 +53,8 @@
             "type": "Feature",
             "properties": {
                 "Id": 4,
-                "Nome": "Rua dos Acadêmicos"
+                "name": "Passagem: Rua dos Acadêmicos",
+                "type": "bottom"
             },
             "geometry": {
                 "type": "Point",
@@ -59,7 +65,8 @@
             "type": "Feature",
             "properties": {
                 "Id": 5,
-                "Nome": "Avenida Santo Antônio"
+                "name": "Passagem: Avenida Santo Antônio",
+                "type": "bottom"
             },
             "geometry": {
                 "type": "Point",
@@ -70,7 +77,8 @@
             "type": "Feature",
             "properties": {
                 "Id": 6,
-                "Nome": "Eduardo Lucio Picanço"
+                "name": "Passagem: Eduardo Lucio Picanço",
+                "type": "bottom"
             },
             "geometry": {
                 "type": "Point",
@@ -81,7 +89,8 @@
             "type": "Feature",
             "properties": {
                 "Id": 7,
-                "Nome": "Augusto Vieira Jacques"
+                "name": "Passagem: Augusto Vieira Jacques",
+                "type": "top"
             },
             "geometry": {
                 "type": "Point",
