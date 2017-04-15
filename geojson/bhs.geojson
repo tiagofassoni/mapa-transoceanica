@@ -15,8 +15,8 @@
       "bicycle_lane_type": "Ciclovia sobre calçada",
       "status": "Concluído em 30 dias (falta uma desapropriação cujo dono do imóvel não se manifestou). Falta executar toda a sinalização horizontal e vertical da ciclovia.",
       "intervention": "",
-      "before_img": "https://transoceanica.hacklab.com.br/wp-content/uploads/2017/04/Trecho-1-Antes-2.png",
-      "after_img": "https://transoceanica.hacklab.com.br/wp-content/uploads/2017/04/Trecho-1-Depois-2.jpg"
+      "before_img": "https://transoceanica.hacklab.com.br/wp-content/uploads/2017/04/trecho-1-antes.png",
+      "after_img": "https://transoceanica.hacklab.com.br/wp-content/uploads/2017/04/trecho-1-depois.png"
     },
     "geometry": {
       "type": "LineString",
