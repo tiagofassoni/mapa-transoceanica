@@ -43,6 +43,14 @@ body { margin:0; padding:0; }
   max-width: 85vw;
   /*min-height:vh;*/
 }
+@media (max-width:768px) {
+  #tile-grandao {
+    max-width: 110vw;
+    /*min-height:40vh;
+    max-height:50vh;*/
+    zoom: 0.5;
+  }
+}
 
 /* Isto aqui é daquela parte vish-muita-treta de fazer o  menuzao em cima do leaflet */
 .titulo-da-parte-de-onibus {
@@ -55,6 +63,9 @@ body { margin:0; padding:0; }
   font-size: 18px;
   color: #FE4D3B;
 }
+/*@media (max-width:999px) {
+  font-size: 1rem;
+}*/
 
 
 #coluna-do-desenho-do-onibus {
@@ -125,6 +136,11 @@ border-style: none none dotted dotted;
 }
 
 /* Tile do antes e depois */
+@media (max-width: 999px) {
+  #tile-do-antes-e-depois {
+    display: none;
+  }
+}
 #tile-do-antes-e-depois > p {
   color: #fff;
   text-align: center;
@@ -186,4 +202,9 @@ border-style: none none dotted dotted;
   border-left:15px solid transparent;
   border-right:15px solid transparent;
   border-top:15px solid #f58b33;
+}
+
+/* Remove o logo do mapbox */
+.mapbox-logo {
+  display: none !important;
 }
