@@ -2,11 +2,11 @@ $( document ).ready(function() {
 
   L.mapbox.accessToken = 'pk.eyJ1IjoianVzdHRlc3RpbmciLCJhIjoiMEg3ZWJTVSJ9.h41984pPh9afTYWBg2eoQQ';
   var map = L.mapbox.map('map', 'mapbox.streets', {scrollWheelZoom: false})
-      .setView([  -22.946643, -43.058642], 14);
-      // .on('click', function(e) {
+      .setView([  -22.946643, -43.058642], 14)
+      .on('click', function(e) {
         // map.scrollWheelZoom.enable();
-        // map.dragging.enable();
-      // });;
+        map.dragging.enable();
+      });
       map.dragging.disable()
 
       //  map.scrollWheelZoom.enable();
@@ -72,6 +72,7 @@ $( document ).ready(function() {
       var layer = e.target;
       map.removeControl(bhs_line_legends_hover[layer.feature.properties.Id]);
       layer.setStyle(default_bhs_line_style);
+      map.addControl(mostraLegal);
     }
   }
 
@@ -89,6 +90,8 @@ $( document ).ready(function() {
       $('#botao-fechar-legenda-giganta').click(function(e) {
         bhs_line_legends_click_displayed = false;
         map.removeControl(bhs_line_legends_click[layer.feature.properties.Id]);
+        layer.setStyle(default_bhs_line_style);
+        map.addControl(mostraLegal);
       });
       // Liga o slider antes <-> depois
       $('.cocoen').cocoen();
