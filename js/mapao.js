@@ -1,8 +1,17 @@
 $( document ).ready(function() {
 
+  var default_zoom = 14
+
+  if (window.innerWidth < 900) {
+    default_zoom = 13
+  }
+
   L.mapbox.accessToken = 'pk.eyJ1IjoianVzdHRlc3RpbmciLCJhIjoiMEg3ZWJTVSJ9.h41984pPh9afTYWBg2eoQQ';
-  var map = L.mapbox.map('map', 'mapbox.streets', {scrollWheelZoom: false})
-      .setView([  -22.946643, -43.058642], 14)
+  var map = L.mapbox.map('map', 'mapbox.streets', {
+    scrollWheelZoom: false,
+    tap: false
+  })
+      .setView([  -22.946643, -43.058642], default_zoom)
       .on('click', function(e) {
         // map.scrollWheelZoom.enable();
         map.dragging.enable();
@@ -30,6 +39,13 @@ $( document ).ready(function() {
     // fillOpacity: 0.4,
     opacity: 0.0
   }
+
+  var highlight_line_style = {
+    weight: 30,
+    color: '#FAA286',
+    fillOpacity: 0.3,
+    opacity: 0.4
+  }
   var bhs_line_legends_hover = {};
   var bhs_line_legends_click = {};
   var bhs_line_legends_click_displayed = false;
@@ -50,17 +66,12 @@ $( document ).ready(function() {
 
   function highlightFeature(e) {
 
+    //Oculta call to action
     map.removeControl(mostraLegal);
 
     if (bhs_line_legends_click_displayed === false) {
       var layer = e.target;
-      layer.setStyle({
-          weight: 30,
-          color: '#FAA286',
-      //     dashArray: '',
-          fillOpacity: 0.3,
-          opacity: 0.4
-      });
+      layer.setStyle(highlight_line_style);
       loadBhsLineLegend(layer.feature.properties);
       bhs_line_legends_hover[layer.feature.properties.Id].addLegend(document.getElementById('hover-de-baixo').innerHTML);
       map.addControl(bhs_line_legends_hover[layer.feature.properties.Id]);
@@ -77,20 +88,32 @@ $( document ).ready(function() {
   }
 
   function showFeatureDetails(e) {
+    // Evita exibir a legenda duas vezes
     if (bhs_line_legends_click_displayed === false) {
+
+      map.removeControl(mostraLegal);
       bhs_line_legends_click_displayed = true;
       var layer = e.target;
 
       map.removeControl(bhs_line_legends_hover[layer.feature.properties.Id]);
 
+      // Processa template Mustache
       loadBhsLineBigLegend(layer.feature.properties);
+      // Adiciona elemento a legenda
       bhs_line_legends_click[layer.feature.properties.Id].addLegend(document.getElementById('teste-da-bagaca').innerHTML);
+      // Adiciona legenda ao mapa
       map.addControl(bhs_line_legends_click[layer.feature.properties.Id]);
+
+      layer.setStyle(highlight_line_style);
 
       $('#botao-fechar-legenda-giganta').click(function(e) {
         bhs_line_legends_click_displayed = false;
         map.removeControl(bhs_line_legends_click[layer.feature.properties.Id]);
         layer.setStyle(default_bhs_line_style);
+        map.addControl(mostraLegal);
+        // Tira hitghlight da linha bhc
+        layer.setStyle(default_bhs_line_style);
+        //Exibe call to action
         map.addControl(mostraLegal);
       });
       // Liga o slider antes <-> depois
@@ -129,17 +152,23 @@ $( document ).ready(function() {
     }).addTo(map);
   });
 
+  var events_config = {click: showFeatureDetails};
+
+  if (window.innerWidth > 900) {
+    events_config = {
+      click: showFeatureDetails,
+      mouseover: highlightFeature,
+      mouseout: resetHighlight
+    };
+  }
+
   $.getJSON("geojson/bhs.geojson", function(infoGeojson) {
     var info = L.geoJSON(infoGeojson, {
       style: function (feature) {
           return default_bhs_line_style;
       },
       onEachFeature: function (feature, layer) {
-        layer.on({
-          mouseover: highlightFeature,
-          mouseout: resetHighlight,
-          click: showFeatureDetails
-        });
+        layer.on(events_config);
         bhs_line_legends_hover[feature.properties.Id] = L.mapbox.legendControl({'position': 'bottomleft'});
         bhs_line_legends_click[layer.feature.properties.Id] = L.mapbox.legendControl({'position': 'bottomleft'})
       },
