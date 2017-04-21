@@ -176,10 +176,10 @@ border-style: none none dotted dotted;
 }
 .quadrado {
   float: left;
-  width: 10px;
-  height: 10px;
-  margin: 5px;
-  border: 1px solid rgba(0, 0, 0, .2);
+  width: 30px;
+  height: 5px;
+  margin: 7px;
+  /*border: 1px solid rgba(0, 0, 0, .2);*/
 }
 
 /* Diminuir tamanho das fotos */
