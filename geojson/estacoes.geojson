@@ -9,67 +9,67 @@
             },
             "geometry": {
                 "type": "Point",
-                "coordinates": [-43.099156924941582, -22.932983912438925]
+                "coordinates": [-43.099156924940246, -22.932983912438413]
             }
         },
         {
             "type": "Feature",
             "properties": {
                 "Id": 1,
-                "name": "Estação Fazendinha, perto da AABB",
+                "name": "Estação BRT - Fazendinha, perto da AABB",
                 "type": "right"
             },
             "geometry": {
                 "type": "Point",
-                "coordinates": [-43.027836101827724, -22.953465956285683]
+                "coordinates": [-43.076832354034934, -22.933840323402247]
             }
         },
         {
             "type": "Feature",
             "properties": {
                 "Id": 2,
-                "name": "Estação Rótula Cafubá da Fazendinha",
+                "name": "Estação BRT -  Rótula Cafubá da Fazendinha",
                 "type": "top"
             },
             "geometry": {
                 "type": "Point",
-                "coordinates": [-43.071492471049837, -22.936115562558854]
+                "coordinates":  [-43.071492471048394, -22.9361155625583]
             }
         },
         {
             "type": "Feature",
             "properties": {
                 "Id": 3,
-                "name": "Estação Próximo ao DPO do Cafubá",
+                "name": "Estação BRT - Próximo ao DPO do Cafubá",
                 "type": "top-right"
             },
             "geometry": {
                 "type": "Point",
-                "coordinates": [-43.062171439465821, -22.93695713669074]
+                "coordinates": [-43.066387176309966, -22.932902255212436]
             }
         },
         {
             "type": "Feature",
             "properties": {
                 "Id": 4,
-                "name": "Estação Antigo hospital Amil",
+                "name": "Estação BRT - Antigo hospital Amil",
                 "type": "top"
             },
             "geometry": {
                 "type": "Point",
-                "coordinates": [-43.076832354036362, -22.93384032340278]
+                "coordinates": [-43.062171439464329, -22.936957136690182]
             }
         },
         {
             "type": "Feature",
             "properties": {
                 "Id": 5,
-                "name": "Estação Antes do Multicenter, ao lado do hospital",
+                "name": "Estação BRT - Antes do Multicenter, ao lado do hospital",
                 "type": "top-right"
             },
             "geometry": {
                 "type": "Point",
-                "coordinates": [-43.066387176311437, -22.932902255212987]
+                "coordinates": [-43.058293162267049, -22.940581324643247]
             }
         },
         {
@@ -81,79 +81,79 @@
             },
             "geometry": {
                 "type": "Point",
-                "coordinates": [-43.058293162268555, -22.940581324643816]
+                "coordinates": [-43.053185470555363, -22.941144829248969]
             }
         },
         {
             "type": "Feature",
             "properties": {
                 "Id": 7,
-                "name": "Estação Antes da subestação da Enel e depois da Rua das Andorinhas",
+                "name": "Estação BRT - Antes da subestação da Enel e depois da Rua das Andorinhas",
                 "type": "top"
             },
             "geometry": {
                 "type": "Point",
-                "coordinates": [-43.053185470556883, -22.941144829249538]
+                "coordinates": [-43.045572534695609, -22.940222247394448]
             }
         },
         {
             "type": "Feature",
             "properties": {
                 "Id": 8,
-                "name": "Estação Próximo Rua São Marcio",
+                "name": "Estação BRT - Próximo Rua São Marcio",
                 "type": "top"
             },
             "geometry": {
                 "type": "Point",
-                "coordinates": [-43.045572534697158, -22.940222247395038]
+                "coordinates": [-43.041020898842298, -22.941325559677306]
             }
         },
         {
             "type": "Feature",
             "properties": {
                 "Id": 9,
-                "name": "Estação em frente ao Mercado Maravista",
+                "name": "Estação BRT - em frente ao Mercado Maravista",
                 "type": "top"
             },
             "geometry": {
                 "type": "Point",
-                "coordinates": [-43.041020898843868, -22.94132555967791]
+                "coordinates": [-43.035431348756845, -22.944359498404577]
             }
         },
         {
             "type": "Feature",
             "properties": {
                 "Id": 10,
-                "name": "Estação Rótula da Avenida Central",
+                "name": "Estação BRT - Rótula da Avenida Central",
                 "type": "top-right"
             },
             "geometry": {
                 "type": "Point",
-                "coordinates": [-43.035431348758436, -22.944359498405188]
+                "coordinates": [-43.032118621430293, -22.946672798407455]
             }
         },
         {
             "type": "Feature",
             "properties": {
                 "Id": 11,
-                "name": "Estação Perto do Rio João Mendes",
+                "name": "Estação BRT - Perto do Rio João Mendes",
                 "type": "top-right"
             },
             "geometry": {
                 "type": "Point",
-                "coordinates": [-43.032118621431898, -22.946672798408073]
+                "coordinates": [-43.029690751944905, -22.949500499701237]
             }
         },
         {
             "type": "Feature",
             "properties": {
                 "Id": 12,
-                "name": "Estação Engenho do Mato",
+                "name": "Terminal Itaipu - Estação Engenho do Mato",
                 "type": "top-right"
             },
             "geometry": {
                 "type": "Point",
-                "coordinates": [-43.029690751946525, -22.949500499701855]
+                "coordinates": [-43.027836101826097, -22.953465956285058]
             }
         }
     ]

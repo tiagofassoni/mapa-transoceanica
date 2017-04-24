@@ -5,60 +5,60 @@
             "type": "Feature",
             "properties": {
                 "Id": 0,
-                "name": "Retorno: Rótula do Cafubá",
+                "name": "Rótula do Cafubá",
                 "type": "top"
             },
             "geometry": {
                 "type": "Point",
-                "coordinates": [-43.032118621431898, -22.946672798408073]
+                "coordinates": [-43.071492471048394, -22.9361155625583]
             }
         },
         {
             "type": "Feature",
             "properties": {
                 "Id": 1,
-                "name": "Retorno: DPO Cafubá",
+                "name": "DPO do Cafubá",
                 "type": "top"
             },
             "geometry": {
                 "type": "Point",
-                "coordinates": [-43.057141016453862, -22.941857158864273]
+                "coordinates": [-43.066917925790065, -22.932241361931073]
             }
         },
         {
             "type": "Feature",
             "properties": {
                 "Id": 2,
-                "name": "Retorno: Multicenter",
+                "name": "Itaipu Multicenter",
                 "type": "top"
             },
             "geometry": {
                 "type": "Point",
-                "coordinates": [-43.066917925791529, -22.932241361931624]
+                "coordinates": [-43.057141016452363, -22.941857158863712]
             }
         },
         {
             "type": "Feature",
             "properties": {
                 "Id": 3,
-                "name": "Retorno: Avenida Central",
+                "name": "Avenida Central",
                 "type": "top"
             },
             "geometry": {
                 "type": "Point",
-                "coordinates": [-43.071492471049837, -22.936115562558854]
+                "coordinates": [-43.032118621430293, -22.946672798407455]
             }
         },
         {
             "type": "Feature",
             "properties": {
                 "Id": 4,
-                "name": "Retorno: Engenho do Mato",
+                "name": "Engenho do Mato",
                 "type": "top"
             },
             "geometry": {
                 "type": "Point",
-                "coordinates": [-43.028248845353438, -22.953876712153953]
+                "coordinates": [-43.028248845351811, -22.953876712153331]
             }
         }
     ]

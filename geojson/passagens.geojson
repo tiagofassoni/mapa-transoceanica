@@ -1,101 +1,113 @@
 {
-    "type": "FeatureCollection",
-    "name": "passages",
-    "features": [{
-            "type": "Feature",
-            "properties": {
-                "Id": 0,
-                "name": "Passagem: Rua 14 de Abril, subida para o preventório",
-                "type": "bottom"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-43.033599640782825, -22.945274337188263]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Id": 1,
-                "name": "Passagem: Em frente à AABB",
-                "type": "bottom"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-43.037029522448499, -22.943679559830311]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Id": 2,
-                "name": "Passagem: Fazendinha",
-                "type": "bottom"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-43.039845514382506, -22.941621722293242]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Id": 3,
-                "name": "Passagem: Jacaré",
-                "type": "bottom"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-43.047511670234108, -22.940133204259308]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Id": 4,
-                "name": "Passagem: Rua dos Acadêmicos",
-                "type": "bottom"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-43.055952434336966, -22.941776543254758]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Id": 5,
-                "name": "Passagem: Avenida Santo Antônio",
-                "type": "bottom"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-43.059846731629598, -22.938788209430388]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Id": 6,
-                "name": "Passagem: Eduardo Lucio Picanço",
-                "type": "bottom"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-43.079215707394297, -22.935911942446143]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Id": 7,
-                "name": "Passagem: Augusto Vieira Jacques",
-                "type": "top"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-43.097204665190119, -22.932051688051448]
-            }
-        }
-    ]
+  "type": "FeatureCollection",
+  "name": "passages",
+  "features": [{
+      "type": "Feature",
+      "properties": {
+        "Id": 0,
+        "name": "Rua 14 de Abril, subida para o Preventório",
+        "type": "bottom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-43.100377853712736, -22.934158330674943]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Id": 1,
+        "name": "Em frente à AABB",
+        "type": "bottom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-43.07924987770766, -22.935969247428307]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Id": 2,
+        "name": "Fazendinha",
+        "type": "bottom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-43.073878910786441, -22.934635387495568]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Id": 3,
+        "name": "Jacaré",
+        "type": "bottom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-43.059838701656815, -22.938852391611871]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Id": 4,
+        "name": "Rua dos Acadêmicos",
+        "type": "bottom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-43.055913121041833, -22.941790633695579]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Id": 5,
+        "name": "Avenida Santo Antônio",
+        "type": "bottom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-43.047555507370433, -22.940123753493612]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Id": 6,
+        "name": "Eduardo Lucio Picanço",
+        "type": "bottom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-43.03694579407199, -22.943706848465059]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Id": 7,
+        "name": "Augusto Vieira Jacques",
+        "type": "top"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-43.033151883189404, -22.945617237609632]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Id": 8,
+        "name": "Romanda Gonçalves",
+        "type": "top"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-43.030740883291237, -22.947888181079069]
+      }
+    }
+  ]
 }
