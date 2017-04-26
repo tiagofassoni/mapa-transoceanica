@@ -8,12 +8,16 @@
   <script src='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.js'></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
-  <script src='js/vendors/cocoen.min.js'></script>
-  <script src='js/vendors/cocoen-jquery.min.js'></script>
+  <!--<script src='js/vendors/cocoen.min.js'></script>
+  <script src='js/vendors/cocoen-jquery.min.js'></script>-->
+  <!--<script src='js/vendors/jquery.event.move.js' type='text/javascript'></script>-->
+  <script src='js/vendors/before-after.min.js' type='text/javascript'></script>
   <script src='js/vendors/mustache.min.js'></script>
 
   <link href='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.css' rel='stylesheet' />
-  <link href='css/vendors/cocoen.min.css' rel='stylesheet' />
+  <link rel="stylesheet" href="css/vendors/before-after.min.css" type="text/css" media="screen" />
+
+  <!--<link href='css/vendors/cocoen.min.css' rel='stylesheet' />-->
   <link href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css' rel='stylesheet' />
   <link href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css.map' rel='stylesheet' />
   <link href='css/main.css' rel='stylesheet' />
@@ -98,11 +102,14 @@
             {{ #feature.before_img }}
             <article class="tile is-child" id="tile-do-antes-e-depois">
               <!--<p>Terceiro</p>-->
-              <div class="cocoen">
+              <div class="ba-slider">
                  <!-- The before image is first -->
                  <img src="{{ feature.before_img }}" />
                  <!-- The after image is last -->
-                 <img src="{{ feature.after_img }}" />
+                 <div class="resize">
+                   <img src="{{ feature.after_img }}" />
+                 </div>
+                 <span class="handle"></span>
               </div>
               <p><span>Clique e arraste</span> para comparar<br />antes e depois no local</p>
             </article>

@@ -127,9 +127,10 @@ $( document ).ready(function() {
         //Exibe call to action 
         map.addControl(mostraLegal); 
       }); 
-      
+
       // Liga o slider antes <-> depois
-      $('.cocoen').cocoen();
+      // $('.cocoen').cocoen();
+      $('.ba-slider').beforeAfter();
     }
   }
 
