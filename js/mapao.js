@@ -116,6 +116,18 @@ $( document ).ready(function() {
         //Exibe call to action
         map.addControl(mostraLegal);
       });
+       
+      map.on('preclick', function(e) { 
+        bhs_line_legends_click_displayed = false; 
+        map.removeControl(bhs_line_legends_click[layer.feature.properties.Id]); 
+        layer.setStyle(default_bhs_line_style); 
+        map.addControl(mostraLegal); 
+        // Tira hitghlight da linha bhc 
+        layer.setStyle(default_bhs_line_style); 
+        //Exibe call to action 
+        map.addControl(mostraLegal); 
+      }); 
+      
       // Liga o slider antes <-> depois
       $('.cocoen').cocoen();
     }
