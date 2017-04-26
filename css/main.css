@@ -226,3 +226,10 @@ border-style: none none dotted dotted;
 .mapbox-logo {
   display: none !important;
 }
+
+/* Para acertar a cor do slider */
+.ba-slider .handle:after {
+  background: #FD4D3D !important;
+  border: 1px solid #FD4D3D !important;
+  box-shadow: none !important;
+}
