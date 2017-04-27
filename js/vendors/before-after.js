@@ -54,10 +54,16 @@
 
   // Define plugin
   $.fn.beforeAfter = function() {
+    console.log('Entrou na função');
     var cur = this;
+    elemento_do_slider = cur;
     // Adjust the slider
+    
     var width = cur.width()+'px';
-    cur.find('.resize img').css('width', width);
+    console.log('O valor de width é ' + width);
+    // O problema está aqui, e nem ideia de como vou resolver isso
+    // cur.find('.resize img').css('width', width);
+
     // Bind dragging events
     drags(cur.find('.handle'), cur.find('.resize'), cur);
 
