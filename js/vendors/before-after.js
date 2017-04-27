@@ -56,13 +56,15 @@
   $.fn.beforeAfter = function() {
     console.log('Entrou na função');
     var cur = this;
-    elemento_do_slider = cur;
+    console.dir(cur);
     // Adjust the slider
     
     var width = cur.width()+'px';
+    var width_primeira_img = $('.ba-slider > img:first').width() + 'px';
     console.log('O valor de width é ' + width);
+    console.log('O valor de width da primeira imagem é ' + width_primeira_img);
     // O problema está aqui, e nem ideia de como vou resolver isso
-    // cur.find('.resize img').css('width', width);
+    cur.find('.resize img').css('width', width_primeira_img);
 
     // Bind dragging events
     drags(cur.find('.handle'), cur.find('.resize'), cur);
