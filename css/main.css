@@ -196,9 +196,12 @@ border-style: none none dotted dotted;
 
 /* Diminuir tamanho das fotos */
 .ba-slider > img {
-  height: 350px;
+max-height: 350px !important;
   /*width: auto;
   max-width: 100%;*/
+}
+.ba-slider > .resize > img {
+  max-height: 350px !important;
 }
 
 .bhs-stations-popup .leaflet-popup-content-wrapper {

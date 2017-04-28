@@ -15,8 +15,8 @@
       "bicycle_lane_type": "Ciclovia sobre calçada",
       "status": "Estará aberto ao tráfego no dia 6 de maio.",
       "intervention": "",
-      "before_img": "https://transoceanica.hacklab.com.br/wp-content/uploads/2017/04/trecho-1-antes.png",
-      "after_img": "https://transoceanica.hacklab.com.br/wp-content/uploads/2017/04/trecho-1-depois.png"
+      "before_img": "https://transoceanica.hacklab.com.br/wp-content/uploads/2017/04/trecho-1-antes-e1493347613153.png",
+      "after_img": "https://transoceanica.hacklab.com.br/wp-content/uploads/2017/04/trecho-1-depois-e1493347783465.png"
     },
     "geometry": {
       "type": "LineString",
