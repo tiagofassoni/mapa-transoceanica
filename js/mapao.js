@@ -188,7 +188,12 @@ $( document ).ready(function() {
 
   var events_config = {click: showFeatureDetails};
 
-  if (window.innerWidth > 900) {
+  function is_touch_device() {
+    return 'ontouchstart' in window        // works on most browsers
+        || navigator.maxTouchPoints;       // works on IE10/11 and Surface
+  };
+
+  if (window.innerWidth > 1300 || !is_touch_device()) {
     events_config = {
       click: showFeatureDetails,
       mouseover: highlightFeature,
