@@ -198,6 +198,13 @@ border-style: none none dotted dotted;
   /*border: 1px solid rgba(0, 0, 0, .2);*/
 }
 
+@media (max-width: 800px) {
+  #legenda-linhas-interno {
+    font-size: 9px;
+    padding: 2px;
+  }
+}
+
 /* Diminuir tamanho das fotos */
 .ba-slider > img {
 max-height: 350px !important;
