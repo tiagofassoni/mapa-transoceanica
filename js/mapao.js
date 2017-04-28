@@ -42,11 +42,17 @@ $( document ).ready(function() {
   mostraLegal.addTo(map);
 
   map.createPane('bhs_line');
-  map.getPane('bhs_line').style.zIndex = 410;
+  map.getPane('bhs_line').style.zIndex = 10;
   map.createPane('bike_line');
-  map.getPane('bike_line').style.zIndex = 420;
+  map.getPane('bike_line').style.zIndex = 20;
   map.createPane('car_line');
-  map.getPane('car_line').style.zIndex = 430;
+  map.getPane('car_line').style.zIndex = 30;
+
+  map.createPane('markers');
+  map.getPane('markers').style.zIndex = 600;
+
+  map.createPane('popups');
+  map.getPane('popups').style.zIndex = 700;
 
   map.createPane('info');
   map.getPane('info').style.zIndex = 650;
@@ -221,7 +227,8 @@ $( document ).ready(function() {
     var className = type + '-popup';
     layer.bindPopup(feature.properties.name, {
       className: className,
-      closeButton: false
+      closeButton: false,
+      pane: 'popups'
     });
   }
 }
@@ -252,12 +259,14 @@ $( document ).ready(function() {
     L.geoJSON(estacoesGeojson, {
       pointToLayer: function (feature, latlng) {
         return L.marker(latlng, {
-          'icon': bhs_station_icon
+          'icon': bhs_station_icon,
+          pane: 'markers'
         }).addTo(map);
       },
       onEachFeature: function(feature, layer) {
         return markerClickCallback(feature, layer, 'bhs-stations');
-      }
+      },
+      pane: 'markers'
     }).addTo(map);
   });
 
@@ -265,12 +274,14 @@ $( document ).ready(function() {
     L.geoJSON(retornosGeojson, {
       pointToLayer: function (feature, latlng) {
         return L.marker(latlng, {
-          'icon': return_icon
+          'icon': return_icon,
+          pane: 'markers'
         }).addTo(map);
       },
       onEachFeature: function(feature, layer) {
         return markerClickCallback(feature, layer, 'returns');
-      }
+      },
+
     }).addTo(map);
   });
 
@@ -278,12 +289,14 @@ $( document ).ready(function() {
     L.geoJSON(passagensGeojson, {
       pointToLayer: function (feature, latlng) {
         return L.marker(latlng, {
-          'icon': passages_icon
+          'icon': passages_icon,
+          pane: 'markers'
         }).addTo(map);
       },
       onEachFeature: function(feature, layer) {
         return markerClickCallback(feature, layer, 'passages');
-      }
+      },
+      pane: 'markers'
     }).addTo(map);
   });
 
