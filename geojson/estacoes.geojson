@@ -16,7 +16,7 @@
             "type": "Feature",
             "properties": {
                 "Id": 1,
-                "name": "Estação BRT - Fazendinha, perto da AABB",
+                "name": "Estação BHS - Fazendinha, perto da AABB",
                 "type": "right"
             },
             "geometry": {
@@ -28,7 +28,7 @@
             "type": "Feature",
             "properties": {
                 "Id": 2,
-                "name": "Estação BRT -  Rótula Cafubá da Fazendinha",
+                "name": "Estação BHS -  Rótula Cafubá da Fazendinha",
                 "type": "top"
             },
             "geometry": {
@@ -40,7 +40,7 @@
             "type": "Feature",
             "properties": {
                 "Id": 3,
-                "name": "Estação BRT - Próximo ao DPO do Cafubá",
+                "name": "Estação BHS - Próximo ao DPO do Cafubá",
                 "type": "top-right"
             },
             "geometry": {
@@ -52,7 +52,7 @@
             "type": "Feature",
             "properties": {
                 "Id": 4,
-                "name": "Estação BRT - Antigo hospital Amil",
+                "name": "Estação BHS - Antigo hospital Amil",
                 "type": "top"
             },
             "geometry": {
@@ -64,7 +64,7 @@
             "type": "Feature",
             "properties": {
                 "Id": 5,
-                "name": "Estação BRT - Antes do Multicenter, ao lado do hospital",
+                "name": "Estação BHS - Antes do Multicenter, ao lado do hospital",
                 "type": "top-right"
             },
             "geometry": {
@@ -88,7 +88,7 @@
             "type": "Feature",
             "properties": {
                 "Id": 7,
-                "name": "Estação BRT - Antes da subestação da Enel e depois da Rua das Andorinhas",
+                "name": "Estação BHS - Antes da subestação da Enel e depois da Rua das Andorinhas",
                 "type": "top"
             },
             "geometry": {
@@ -100,7 +100,7 @@
             "type": "Feature",
             "properties": {
                 "Id": 8,
-                "name": "Estação BRT - Próximo Rua São Marcio",
+                "name": "Estação BHS - Próximo Rua São Marcio",
                 "type": "top"
             },
             "geometry": {
@@ -112,7 +112,7 @@
             "type": "Feature",
             "properties": {
                 "Id": 9,
-                "name": "Estação BRT - em frente ao Mercado Maravista",
+                "name": "Estação BHS - em frente ao Mercado Maravista",
                 "type": "top"
             },
             "geometry": {
@@ -124,7 +124,7 @@
             "type": "Feature",
             "properties": {
                 "Id": 10,
-                "name": "Estação BRT - Rótula da Avenida Central",
+                "name": "Estação BHS - Rótula da Avenida Central",
                 "type": "top-right"
             },
             "geometry": {
@@ -136,7 +136,7 @@
             "type": "Feature",
             "properties": {
                 "Id": 11,
-                "name": "Estação BRT - Perto do Rio João Mendes",
+                "name": "Estação BHS - Perto do Rio João Mendes",
                 "type": "top-right"
             },
             "geometry": {
