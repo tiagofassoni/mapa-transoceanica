@@ -1,17 +1,28 @@
 $( document ).ready(function() {
 
-  var default_zoom = 14
+  var default_zoom = 14.5;
+  var default_line_weight = 5;
 
-  if (window.innerWidth < 900) {
-    default_zoom = 13
+  if (window.innerWidth <= 1300 && window.innerWidth > 1000){
+    default_zoom = 14;
+  } else if (window.innerWidth <= 1000 && window.innerWidth > 700) {
+    default_zoom = 13.5;
+  } else if (window.innerWidth <= 700 && window.innerWidth > 500) {
+    default_zoom = 13;
+} else if (window.innerWidth < 500) {
+    default_zoom = 12.5;
+    var default_line_weight = 3;
   }
 
   L.mapbox.accessToken = 'pk.eyJ1IjoianVzdHRlc3RpbmciLCJhIjoiMEg3ZWJTVSJ9.h41984pPh9afTYWBg2eoQQ';
   var map = L.mapbox.map('map', 'mapbox.streets', {
     scrollWheelZoom: false,
-    tap: false
+    tap: false,
+    zoom: default_zoom,
+    zoomSnap: 0.5,
+    zoomDelta: 0.5
   })
-      .setView([  -22.946643, -43.058642], default_zoom)
+      .setView([  -22.946643, -43.064642])
       .on('click', function(e) {
         // map.scrollWheelZoom.enable();
         map.dragging.enable();
@@ -29,6 +40,13 @@ $( document ).ready(function() {
 
   var mostraLegal = L.mapbox.legendControl({'position': 'bottomleft'}).addLegend(document.getElementById('legenda-transoceanica-benvindo').innerHTML);
   mostraLegal.addTo(map);
+
+  map.createPane('bhs_line');
+  map.getPane('bhs_line').style.zIndex = 610;
+  map.createPane('bike_line');
+  map.getPane('bike_line').style.zIndex = 620;
+  map.createPane('car_line');
+  map.getPane('car_line').style.zIndex = 630;
 
   map.createPane('info');
   map.getPane('info').style.zIndex = 650;
@@ -138,8 +156,9 @@ $( document ).ready(function() {
     var bhs = L.geoJSON(bhsGeojson, {
       style: {
         color: '#fd4d3d',
-        weight: 10
+        weight: default_line_weight + 5
       },
+      pane: 'bhs_line'
     }).addTo(map);
   });
 
@@ -148,9 +167,10 @@ $( document ).ready(function() {
       style: function (feature) {
           return {
             color: '#8dc53f',
-            weight: 4
+            weight: default_line_weight + 2
           };
-      }
+      },
+      pane: 'bike_line'
     }).addTo(map);
   });
 
@@ -159,9 +179,10 @@ $( document ).ready(function() {
       style: function (feature) {
           return {
             color: '#f58b33',
-            weight: 5
+            weight: default_line_weight
           };
-      }
+      },
+      pane: 'car_line'
     }).addTo(map);
   });
 
