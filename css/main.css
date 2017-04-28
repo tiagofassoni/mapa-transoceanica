@@ -185,12 +185,16 @@ border-style: none none dotted dotted;
   background-color: #fff;
   padding: 5px;
   border-radius: 3px;
+  font-size: 8px;
 }
 .quadrado {
   float: left;
-  width: 30px;
+  width: 15px;
   height: 5px;
-  margin: 7px;
+  margin-top: 7px;
+  margin-right: 7px;
+  margin-bottom: 7px;
+  margin-left: 4px;
   /*border: 1px solid rgba(0, 0, 0, .2);*/
 }
 
