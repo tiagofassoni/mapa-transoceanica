@@ -37,6 +37,7 @@ $( document ).ready(function() {
   L.mapbox.styleLayer('mapbox://styles/mapbox/streets-v10').addTo(map);
 
   L.mapbox.legendControl({position: 'topright'}).addLegend(document.getElementById('legenda-linhas').innerHTML).addTo(map);
+  L.mapbox.legendControl({position: 'topright'}).addLegend(document.getElementById('legenda-pontos').innerHTML).addTo(map);
 
   var mostraLegal = L.mapbox.legendControl({'position': 'bottomleft'}).addLegend(document.getElementById('legenda-transoceanica-benvindo').innerHTML);
   mostraLegal.addTo(map);
