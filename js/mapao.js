@@ -22,7 +22,7 @@ $( document ).ready(function() {
     zoomSnap: 0.5,
     zoomDelta: 0.5
   })
-      .setView([  -22.946643, -43.064642])
+      .setView([  -22.943643, -43.064642])
       .on('click', function(e) {
         // map.scrollWheelZoom.enable();
         map.dragging.enable();
