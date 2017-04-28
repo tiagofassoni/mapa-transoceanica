@@ -42,11 +42,11 @@ $( document ).ready(function() {
   mostraLegal.addTo(map);
 
   map.createPane('bhs_line');
-  map.getPane('bhs_line').style.zIndex = 610;
+  map.getPane('bhs_line').style.zIndex = 410;
   map.createPane('bike_line');
-  map.getPane('bike_line').style.zIndex = 620;
+  map.getPane('bike_line').style.zIndex = 420;
   map.createPane('car_line');
-  map.getPane('car_line').style.zIndex = 630;
+  map.getPane('car_line').style.zIndex = 430;
 
   map.createPane('info');
   map.getPane('info').style.zIndex = 650;
