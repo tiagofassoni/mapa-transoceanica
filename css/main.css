@@ -151,12 +151,24 @@ border-style: none none dotted dotted;
   max-height: 48px;
 }
 
+@media (max-width: 999px) {
+  #botao-fechar-legenda-giganta {
+  height: 75px !important;
+  width: 75px !important;
+}
+}
+
 /* Tile do antes e depois */
 @media (max-width: 999px) {
   #tile-do-antes-e-depois {
     display: none;
   }
 }
+
+#tile-do-antes-e-depois {
+  max-height: 400px !important;
+}
+
 #tile-do-antes-e-depois > p {
   color: #fff;
   text-align: center;
@@ -183,8 +195,8 @@ border-style: none none dotted dotted;
 }
 
 /* Diminuir tamanho das fotos */
-.cocoen > img {
-  height: 400px;
+.ba-slider > img {
+  height: 350px;
   /*width: auto;
   max-width: 100%;*/
 }
@@ -232,4 +244,24 @@ border-style: none none dotted dotted;
   background: #FD4D3D !important;
   border: 1px solid #FD4D3D !important;
   box-shadow: none !important;
+}
+
+#tile-do-texto-de-acompanhamento {
+  max-height: 400px;
+}
+
+/* Fixes para telas minúsculas */
+@media (max-width: 767px) {
+  .resto-da-parte-de-onibus > .columns > .column {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .paragrafo-promocional-onibus {
+    font-size: 20px !important;
+  }
+  #coluna-do-desenho-do-onibus > p {
+    font-size: 19px !important;
+  }
+
 }
