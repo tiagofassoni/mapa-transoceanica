@@ -32,6 +32,7 @@
       <i class="quadrado" style="background: #fd4d3d"></i> Ônibus BHS<br>
       <i class="quadrado" style="background: #f58b33"></i> Carros<br>
       <i class="quadrado" style="background: #8dc53f"></i> Ciclovia<br>
+      <i class="quadrado" style="background: #f2cb30"></i> Avenida Sete<br>
       <img src="https://tiagofassoni.github.io/mapa-transoceanica/img/bus-icon.png" class="icone-legenda-linhas"/>  Estações BHS
       <br>
       <img src="https://tiagofassoni.github.io/mapa-transoceanica/img/car-icon.png" class="icone-legenda-linhas"/> Cruzamentos<br>
@@ -155,6 +156,40 @@
                         </div>
                         <div class="column" id='resto-da-parte-de-onibus-terceira-coluna'>
                           <p class='texto-promocional-onibus-coluna'>Percentual Concluído: <br /><span class='texto-promocional-onibus-coluna-huge'>{{ feature.percent_done }}</span></p>
+                        </div>
+                    </div> <!-- fim de colunas -->
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </script>
+
+  <script id="hover-av-sete-line-template" type="x-tmpl-mustache">
+    <div class="tile is-ancestor" id='tile-hover-de-baixo'>
+      <div class="tile is-vertical is-12">
+        <div class="tile">
+          <div class="tile is-parent is-12" id='tile-do-texto-de-acompanhamento'>
+            <div class="columns is-multiline is-gapless">
+              <div class="column is-3" id='coluna-da-av-sete'>
+                <p>Avenida Sete</p>
+              </div>
+              <div class="column" id='coluna-dos-textao-tudo'> <!-- a coluna dos textao tudo -->
+                <article class="tile is-child">
+                  <div class="titulo-da-parte-de-av-sete">
+                    <p>De: <b>{{ feature.from }}</b></p>
+                    <p>Até: <b>{{ feature.to }}</b></p>
+                  </div>
+                  <div class='resto-da-parte-de-onibus'>
+                    <div class="columns" >
+                        <div class="column" id='resto-da-parte-de-onibus-primeira-coluna'>
+                            <p class='texto-promocional-av-sete'><span class='texto-promocional-av-sete-coluna-huge2'>{{ feature.structure }}</span></p>
+                        </div>
+                        <div class="column" id='resto-da-parte-de-onibus-terceira-coluna'>
+                          <p class='texto-promocional-av-sete'>Extensão: <br /> <span class='texto-promocional-av-sete-coluna-huge'>{{ feature.extension }}</span></p>
                         </div>
                     </div> <!-- fim de colunas -->
                   </div>

@@ -47,6 +47,8 @@ $( document ).ready(function() {
   map.getPane('bike_line').style.zIndex = 20;
   map.createPane('car_line');
   map.getPane('car_line').style.zIndex = 30;
+  map.createPane('avenue_line');
+  map.getPane('avenue_line').style.zIndex = 40;
 
   map.createPane('markers');
   map.getPane('markers').style.zIndex = 600;
@@ -192,6 +194,18 @@ $( document ).ready(function() {
     }).addTo(map);
   });
 
+  $.getJSON("geojson/avenidasete.geojson", function(avseteGeojson) {
+    L.geoJSON(avseteGeojson, {
+      style: function (feature) {
+          return {
+            color: '#f2cb30',
+            weight: default_line_weight
+          };
+      },
+      // pane: 'avenue_line'
+    }).addTo(map);
+  });
+
   var events_config = {click: showFeatureDetails};
 
   function is_touch_device() {
@@ -216,6 +230,47 @@ $( document ).ready(function() {
         layer.on(events_config);
         bhs_line_legends_hover[feature.properties.Id] = L.mapbox.legendControl({'position': 'bottomleft'});
         bhs_line_legends_click[layer.feature.properties.Id] = L.mapbox.legendControl({'position': 'bottomleft'})
+      },
+      pane: 'info'
+    }).addTo(map);
+  });
+
+  function highlightFeatureAvSete(e) {
+
+    //Oculta call to action
+    map.removeControl(mostraLegal);
+
+    if (bhs_line_legends_click_displayed === false) {
+      var layer = e.target;
+      layer.setStyle({
+        weight: 30,
+        color: '#f2cb30',
+        fillOpacity: 0.3,
+        opacity: 0.4
+      });
+      // loadBhsLineLegend(layer.feature.properties);
+      var template = $('#hover-av-sete-line-template').html();
+      Mustache.parse(template);   // optional, speeds up future uses
+      var rendered = Mustache.render(template, {feature: layer.feature.properties});
+      $('#hover-de-baixo').html(rendered);
+      bhs_line_legends_hover[layer.feature.properties.Id].addLegend(document.getElementById('hover-de-baixo').innerHTML);
+      map.addControl(bhs_line_legends_hover[layer.feature.properties.Id]);
+    }
+  }
+
+  $.getJSON("geojson/avenidasete.geojson", function(infoseteGeojson) {
+    var info = L.geoJSON(infoseteGeojson, {
+      style: function (feature) {
+          return default_bhs_line_style;
+      },
+      onEachFeature: function (feature, layer) {
+        if (window.innerWidth > 1000 || !is_touch_device()) {
+          layer.on({
+            mouseover: highlightFeatureAvSete,
+            mouseout: resetHighlight
+          });
+        }
+        bhs_line_legends_hover[feature.properties.Id] = L.mapbox.legendControl({'position': 'bottomleft'});
       },
       pane: 'info'
     }).addTo(map);

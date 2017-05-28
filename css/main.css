@@ -79,6 +79,15 @@ body { margin:0; padding:0; }
   font-size: 18px;
   color: #FE4D3B;
 }
+.titulo-da-parte-de-av-sete {
+  background-color: #fff;
+  border-color: #fff;
+  padding: 12px;
+}
+.titulo-da-parte-de-av-sete > p {
+  font-size: 18px;
+  color: #f2cb30;
+}
 /*@media (max-width:999px) {
   font-size: 1rem;
 }*/
@@ -97,6 +106,20 @@ body { margin:0; padding:0; }
   font-weight: bold;
 }
 
+#coluna-da-av-sete {
+  background-color: #f2cb30 ;
+  padding: 20px;
+  vertical-align: middle;
+}
+#coluna-da-av-sete > p {
+  color: #9e9ca1;
+  font-size: 20px;
+  /*line-height: 1;*/
+  vertical-align: middle;
+  font-weight: bold;
+
+}
+
 #coluna-dos-textao-tudo {
   background-color: #EEEDEB;
 }
@@ -107,14 +130,24 @@ body { margin:0; padding:0; }
   color: #9C9C9C;
 }
 
-.texto-promocional-onibus-coluna {
+.texto-promocional-av-sete {
   text-align: center;
   font-weight: bold;
-
+  color: ##9e9ca1;
 }
 
 .texto-promocional-onibus-coluna-huge {
   color: #FE4D3B;
+  font-size: 24px;
+}
+
+.texto-promocional-av-sete-coluna-huge {
+  color: #f2cb30;
+  font-size: 24px;
+}
+
+.texto-promocional-av-sete-coluna-huge2 {
+  color: #9e9ca1;
   font-size: 24px;
 }
 
