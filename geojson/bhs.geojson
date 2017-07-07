@@ -15,8 +15,8 @@
       "bicycle_lane_type": "Ciclovia sobre calçada",
       "status": "Concluído",
       "intervention": "",
-      "before_img": "https://transoceanica.hacklab.com.br/wp-content/uploads/2017/04/trecho-1-antes-e1493347613153.png",
-      "after_img": "https://transoceanica.hacklab.com.br/wp-content/uploads/2017/04/trecho-1-depois-e1493347783465.png"
+      "before_img": "https://transoceanicaniteroi.com/wp-content/uploads/2017/04/trecho-1-antes-e1493347613153.png",
+      "after_img": "https://transoceanicaniteroi.com/wp-content/uploads/2017/04/trecho-1-depois-e1493347783465.png"
     },
     "geometry": {
       "type": "LineString",
@@ -51,8 +51,8 @@
       "bicycle_lane_type": "ciclovia segregada",
       "status": "Concluído",
       "intervention": "",
-      "before_img": "https://transoceanica.hacklab.com.br/wp-content/uploads/2017/04/Trecho-2-ANTES.jpg",
-      "after_img": "https://transoceanica.hacklab.com.br/wp-content/uploads/2017/04/trecho-2-depois.png"
+      "before_img": "https://transoceanicaniteroi.com/wp-content/uploads/2017/04/Trecho-2-ANTES.jpg",
+      "after_img": "https://transoceanicaniteroi.com/wp-content/uploads/2017/04/trecho-2-depois.png"
     },
     "geometry": {
       "type": "LineString",
@@ -88,8 +88,8 @@
       "bicycle_lane_type": "ciclovia sobre calçada",
       "status": "Concluído",
       "intervention": "",
-      "before_img": "https://transoceanica.hacklab.com.br/wp-content/uploads/2017/04/trecho-3-Antes.png",
-      "after_img": "https://transoceanica.hacklab.com.br/wp-content/uploads/2017/04/trecho-3-depois.jpg"
+      "before_img": "https://transoceanicaniteroi.com/wp-content/uploads/2017/04/trecho-3-Antes.png",
+      "after_img": "https://transoceanicaniteroi.com/wp-content/uploads/2017/04/trecho-3-depois.jpg"
     },
     "geometry": {
       "type": "LineString",
@@ -135,8 +135,8 @@
       "bicycle_lane_type": "ciclovia sobre calçada/pista compartilhada/calçada compartilhada",
       "status": "Concluído",
       "intervention": "",
-      "before_img": "https://transoceanica.hacklab.com.br/wp-content/uploads/2017/04/trecho-4-antes.jpg",
-      "after_img": "https://transoceanica.hacklab.com.br/wp-content/uploads/2017/04/Trecho-4-depois.png"
+      "before_img": "https://transoceanicaniteroi.com/wp-content/uploads/2017/04/trecho-4-antes.jpg",
+      "after_img": "https://transoceanicaniteroi.com/wp-content/uploads/2017/04/Trecho-4-depois.png"
     },
     "geometry": {
       "type": "LineString",
@@ -279,8 +279,8 @@
       "bicycle_lane_type": "calçada compartilhada / pista compartilhada nas ruas internas R. Prof. Alice Picanço e R. Jéferson Rocha",
       "status": "Será entregue em outubro de 2017",
       "intervention": "",
-      "before_img": "https://transoceanica.hacklab.com.br/wp-content/uploads/2017/04/trecho-7-antes.jpg",
-      "after_img": "https://transoceanica.hacklab.com.br/wp-content/uploads/2017/04/trecho-7-depois.jpg"
+      "before_img": "https://transoceanicaniteroi.com/wp-content/uploads/2017/04/trecho-7-antes.jpg",
+      "after_img": "https://transoceanicaniteroi.com/wp-content/uploads/2017/04/trecho-7-depois.jpg"
     },
     "geometry": {
       "type": "LineString",
@@ -321,8 +321,8 @@
       "bicycle_lane_type": "calçada compartilhada/ciclovia sobre calçada",
       "status": "Será entregue em setembro de 2017",
       "intervention": "",
-      "before_img": "https://transoceanica.hacklab.com.br/wp-content/uploads/2017/04/trecho-8-antes.jpg",
-      "after_img": "https://transoceanica.hacklab.com.br/wp-content/uploads/2017/04/trecho-8-depois.jpg"
+      "before_img": "https://transoceanicaniteroi.com/wp-content/uploads/2017/04/trecho-8-antes.jpg",
+      "after_img": "https://transoceanicaniteroi.com/wp-content/uploads/2017/04/trecho-8-depois.jpg"
     },
     "geometry": {
       "type": "LineString",
